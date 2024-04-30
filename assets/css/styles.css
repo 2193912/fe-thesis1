@@ -504,13 +504,8 @@ body.dark-theme {
   margin-bottom: 1.25rem;
 }
 
-.featured__discount {
+.featured__desc {
   color: var(--title-color);
-}
-
-.featured__price {
-  font-size: var(--small-font-size);
-  text-decoration: line-through;
 }
 
 .featured__card .button {
