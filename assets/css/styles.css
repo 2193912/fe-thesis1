@@ -551,41 +551,6 @@ body.dark-theme {
   transition: border .4s, background-color .4s;
 }
 
-/*=============== DISCOUNT ===============*/
-.discount__container {
-  row-gap: 3.5rem;
-}
-
-.discount__data {
-  text-align: center;
-}
-
-.discount__title {
-  margin-bottom: 1rem;
-}
-
-.discount__description {
-  margin-bottom: 2rem;
-}
-
-.discount__images {
-  display: flex;
-  justify-content: center;
-}
-
-.discount__img-1, 
-.discount__img-2 {
-  width: 170px;
-}
-
-.discount__img-1 {
-  transform: translateX(1rem) rotate(-10deg);
-}
-
-.discount__img-2 {
-  transform: translateX(-1rem) rotate(10deg);
-}
-
 /*=============== NEW ===============*/
 .new__card {
   display: flex;
@@ -611,14 +576,14 @@ body.dark-theme {
   margin-bottom: .5rem;
 }
 
-.new__prices {
+.new__book {
   display: flex;
   align-items: center;
   column-gap: .75rem;
   margin-bottom: .75rem;
 }
 
-.new__discount {
+.new__description {
   color: var(--title-color);
 }
 
