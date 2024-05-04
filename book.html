@@ -1,8 +1,8 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-        <script src="js/cards.js"></script>
         <meta charset="UTF-8">
+        <title>Interactive Book Experience</title>
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <!--Whatever you call the navigation bar-->
+        <!--navigation bar-->
         <header class="header" id="header">
             <nav class="nav container">
                <a href="#" class="nav__logo">
@@ -59,21 +59,25 @@
             </nav>
          </header>
 
-        <!--The actual book/pages/cards/slides-->
-        <div class="title">
-            <h1>Hello There</h1>
-        </div>
-        
-        <div class="picture">
-            <h3>Image should be here</h3>
-        </div>
+        <!--Book-->
+        <div class="text-container"> <!--/Name change due to conflict with styles.css-->
+         <h1>Interactive Book Experience</h1>
+         <div id="story-container">
+             <p id="story-text">Click next to start the story.</p>
+             <img src="" alt="Story Image" id="story-image" style="display:none;">
+             <button onclick="nextPage()" id="story-button">Next</button>
+         </div>
+         <div id="quiz-container" style="display:none;">
+             <h2>Quiz Time!</h2>
+             <p id="quiz-question">Quiz question will appear here.</p>
+             <ul id="quiz-options">
+                 <!-- Quiz options will be dynamically populated -->
+             </ul>
+             <button id="next-button" onclick="nextQuestion()" disabled>Next Question</button>
+             <p id="result"></p>
+         </div>
+     </div>
+     <script src="assets/js/cards.js"></script>
 
-        <div class="text">
-            <h3>Written text should be here</h3>
-        </div>
-
-        <div class="next_page">
-            <button id="next_button">Next</button>
-        </div>
     </body>
 </html>

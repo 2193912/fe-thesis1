@@ -1,21 +1,35 @@
-.title{
-    text-align: center;
+.text-container {
+    position: relative;
+    top: 270px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.picture{
-text-align: center;
-width: 45%;
-margin: auto;
-margin-top: 100px;
+/* h1, h2 {
+    color: #333;
+} */
+
+#story-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
-.text{
-text-align: center;
-width: 45%;
-margin: auto;
-margin-top: 100px;
+#story-image {
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 20px;
 }
 
-.next_page{
-text-align: center;
+#quiz-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+#quiz-container li {
+    margin-bottom: 10px;
 }

@@ -1,0 +1,50 @@
+{
+    "story": [
+        { "text": "Sentence 1 about the story.", "imageUrl": "images/image1.jpg" },
+        { "text": "Sentence 2 about the story.", "imageUrl": "images/image2.jpg" },
+        { "text": "Sentence 3 about the story.", "imageUrl": "images/image3.jpg" },
+        { "text": "Sentence 4 about the story.", "imageUrl": "images/image4.jpg" }
+    ],
+    "quiz": [
+        {
+            "question": "What is the main theme of the first image?",
+            "options": [
+                { "id": 1, "text": "Theme A" },
+                { "id": 2, "text": "correct" },
+                { "id": 3, "text": "Theme C" },
+                { "id": 4, "text": "Theme D" }
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What does the second image represent?",
+            "options": [
+                { "id": 1, "text": "correct" },
+                { "id": 2, "text": "Representation B" },
+                { "id": 3, "text": "Representation C" },
+                { "id": 4, "text": "Representation D" }
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "How does the third sentence relate to the image?",
+            "options": [
+                { "id": 1, "text": "Relation A" },
+                { "id": 2, "text": "Relation B" },
+                { "id": 3, "text": "correct" },
+                { "id": 4, "text": "Relation D" }
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "What can be inferred from the last image?",
+            "options": [
+                { "id": 1, "text": "Inference A" },
+                { "id": 2, "text": "Inference B" },
+                { "id": 3, "text": "ssss" },
+                { "id": 4, "text": "Correct" }
+            ],
+            "correctAnswer": 4
+        }
+    ]
+}
