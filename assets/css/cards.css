@@ -2,6 +2,7 @@
     position: relative;
     top: 270px;
     width: 80%;
+    height: auto;
     margin: 20px auto;
     padding: 10px;
     background: #ffffff;
@@ -32,8 +33,8 @@ li {
     margin-bottom: 10px;
 }
 
-img {
-    /*max-width: 100%;*/
+#story-image {
+    max-width: 100%;
     height: 300px;
     width: 300px;
     display: block;
@@ -42,12 +43,6 @@ img {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
-#story-image {
-    display: block;
-    max-width: 100px;
-    max-height: 100px;
-    margin-top: 20px;
-}
 
 #quiz-container ul {
     list-style: none;
