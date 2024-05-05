@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const resultText = (selectedId === correctId) ? 'Correct!' : 'Incorrect!';
         document.getElementById('result').innerText = resultText;
 
-        // Disable all options in the mcq after clicked a choice
+        // Disable all options in the mcq after user clicks a choice
         const options = document.querySelectorAll('.quiz-option');
         options.forEach(option => {
             option.disabled = true;
