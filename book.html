@@ -60,12 +60,17 @@
          </header>
 
         <!--Book-->
-        <div class="text-container"> <!--/Name change due to conflict with styles.css-->
-         <h1>Interactive Book Experience</h1>
+        <div class="text-container">
+         <h1 style="text-align: center;">View Book </h1>
+         <div id="progress-bar">
+             <div id="progress-bar-inner"></div>
+         </div>
+         <div id="instructions"></div>
+          <img src="" alt="Story Title Image" id="storyTitle-image" style="display:none;">
          <div id="story-container">
-             <p id="story-text">Click next to start the story.</p>
+             <p id="story-text"></p>
              <img src="" alt="Story Image" id="story-image" style="display:none;">
-             <button onclick="nextPage()" id="story-button">Next</button>
+             <button id="next-button">Next</button>
          </div>
          <div id="quiz-container" style="display:none;">
              <h2>Quiz Time!</h2>
@@ -73,9 +78,10 @@
              <ul id="quiz-options">
                  <!-- Quiz options will be dynamically populated -->
              </ul>
-             <button id="next-button" onclick="nextQuestion()" disabled>Next Question</button>
+             <!--<button id="submit-button" onclick="checkAnswer()">Submit</button>-->
              <p id="result"></p>
          </div>
+         
      </div>
      <script src="assets/js/cards.js"></script>
 
