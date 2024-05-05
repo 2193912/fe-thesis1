@@ -72,18 +72,22 @@
              <img src="" alt="Story Image" id="story-image" style="display:none;">
              <button id="next-button">Next</button>
          </div>
-         <div id="quiz-container" style="display:none;">
+        </div>
+
+        <!-- Quiz Modal -->
+        <div id="quiz-modal" class="modal">
+         <div class="modal-content">
+             <span class="close" id="exit-close">&times;</span>
              <h2>Quiz Time!</h2>
              <p id="quiz-question">Quiz question will appear here.</p>
              <ul id="quiz-options">
                  <!-- Quiz options will be dynamically populated -->
              </ul>
-             <!--<button id="submit-button" onclick="checkAnswer()">Submit</button>-->
-             <p id="result"></p>
+             <button id="continue-button" style="display:none; ">Continue</button>
+             <p id="result" style="margin-top: 25px;"></p>
          </div>
-         
-     </div>
-     <script src="assets/js/cards.js"></script>
+        </div>
 
+     <script src="assets/js/cards.js"></script>
     </body>
 </html>
