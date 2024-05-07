@@ -19,27 +19,6 @@ if(searchClose){
   })
 }
 
-/*=============== LOGIN ===============*/
-const loginButton = document.getElementById('login-button'),
-      loginClose = document.getElementById('login-close'),
-      loginContent = document.getElementById('login-content')
-
-/*===== LOGIN SHOW =====*/
-/* Validate if constant exists */
-if(loginButton){
-  loginButton.addEventListener('click', () =>{
-    loginContent.classList.add('show-login')
-  })
-}
-  
-/*===== LOGIN HIDDEN =====*/
-/* Validate if constant exists */
-if(loginClose){
-  loginClose.addEventListener('click', () =>{
-    loginContent.classList.remove('show-login')
-  })
-}
-
 /*=============== ADD SHADOW HEADER ===============*/
 const shadowHeader = () =>{
   const header = document.getElementById('header')
@@ -148,6 +127,42 @@ const scrollActive = () =>{
 	})
 }
 window.addEventListener('scroll', scrollActive)
+
+document.getElementById("openPopup").addEventListener("click", function(event) {
+  event.preventDefault();
+  document.getElementById("popup").style.display = "block";
+});
+
+document.getElementById("closePopup").addEventListener("click", function() {
+  document.getElementById("popup").style.display = "none";
+});
+
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach(item => {
+  const btn = item.querySelector('.accordion-btn');
+  btn.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+
+document.getElementById("openWindow").addEventListener("click", function(event) {
+  event.preventDefault();
+  document.getElementById("window").style.display = "block";
+});
+
+document.getElementById("closeWindow").addEventListener("click", function() {
+  document.getElementById("window").style.display = "none";
+});
+
+document.getElementById("open_Popup").addEventListener("click", function(event) {
+  event.preventDefault();
+  document.getElementById("pop_up").style.display = "block";
+});
+
+document.getElementById("close_Popup").addEventListener("click", function() {
+  document.getElementById("pop_up").style.display = "none";
+});
 
 /*=============== DARK LIGHT THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')

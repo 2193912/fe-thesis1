@@ -7,13 +7,13 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(230, 62%, 56%);
-  --title-color: hsl(230, 70%, 16%);
+  --first-color: #F46051;
+  --title-color: #24293D;
   --text-color: hsl(230, 16%, 45%);
-  --border-color: hsl(230, 50%, 90%);
+  --border-color: #FAF9F6;
   --white-color: hsl(0, 0%, 100%);
-  --body-color: hsl(230, 100%, 96%);
-  --container-color: hsl(230, 100%, 97%);
+  --body-color: 	#FAF9F6;
+  --container-color: #FAF9F6;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -311,92 +311,6 @@ body.dark-theme {
   top: 0;
 }
 
-/*=============== LOGIN ===============*/
-.login {
-  position: fixed;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: var(--z-fixed);
-  background-color: hsla(230, 62%, 96%, .6);
-  backdrop-filter: blur(16px);
-  align-items: center;
-  padding: 1.5rem;
-  text-align: center;
-  transition: top .4s;
-}
-
-.login__form {
-  background-color: var(--container-color);
-  padding: 2rem 1.5rem;
-  border: 2px solid var(--border-color);
-  row-gap: 1.25rem;
-}
-
-.login__title {
-  font-size: var(--h2-font-size);
-}
-
-.login__group {
-  row-gap: 1.25rem;
-}
-
-.login__label {
-  display: block;
-  text-align: initial;
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-  margin-bottom: .25rem;
-}
-
-.login__input {
-  width: 100%;
-  background-color: var(--container-color);
-  border: 2px solid var(--border-color);
-  padding: 1rem;
-  color: var(--text-color);
-}
-
-.login__signup, 
-.login__forgot {
-  display: block;
-  font-size: var(--small-font-size);
-}
-
-.login__signup {
-  margin-bottom: .5rem;
-}
-
-.login__signup a {
-  color: var(--first-color);
-  font-weight: var(--font-medium);
-}
-
-.login__forgot {
-  color: var(--first-color);
-  margin-bottom: 1.25rem;
-}
-
-.login__button {
-  width: 100%;
-  cursor: pointer;
-}
-
-.login__close {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  font-size: 2rem;
-  color: var(--title-color);
-  cursor: pointer;
-}
-
-/* Show login */
-.show-login {
-  top: 0;
-}
-
 /*=============== HOME ===============*/
 .home__swiper {
   margin: initial;
@@ -675,6 +589,131 @@ body.dark-theme {
   text-align: center;
   font-size: var(--small-font-size);
 }
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.accordion-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-btn:hover {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+.window {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.window-content {
+  padding: 20px;
+}
+
+.close_ {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close_:hover,
+.close_:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pop_up {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+.popup-contents {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.closed {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closed:hover,
+.closed:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
