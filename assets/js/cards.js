@@ -75,8 +75,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function showResults() {
-        showInstructions('Congrats');
-        document.getElementById('story-container').innerHTML = `<h2>Your Score: ${score} out of ${storyData.quiz.length}</h2>`;
+        showInstructions('CONGRATULATIONS, YOU GOT');
+        document.getElementById('story-container').innerHTML = `<h3 id='final-score'>${score}/${storyData.quiz.length}</h3>`;
+        document.getElementById('storyTitle-name').innerText = ''
+        document.getElementById('quiz-finished').innerText = 'YOU HAVE FINISHED!'
+        if (score < storyData.quiz.length) {
+            document.getElementById('quiz-result-greeting').innerHTML = `<p id='quiz-result-text'>Every choice is a step forward in learning. Keep exploring, keep growing!</p>`;
+        }
+        if (score == storyData.quiz.length) {
+            document.getElementById('quiz-result-greeting').innerHTML = `<p id='quiz-result-text'>Perfect score! Keep up the fantastic effort :)<p>`;
+        }
     }
 
     function showInstructions(message) {
@@ -96,7 +104,8 @@ document.addEventListener('DOMContentLoaded', function() {
         displayQuiz(currentQuestion);
     }
 
-    function displayQuiz(index) {
+
+    function displayQuiz() {
         if (currentQuestion < storyData.quiz.length) {
             const quiz = storyData.quiz[currentQuestion];
             document.getElementById('quiz-question').innerText = quiz.question;
@@ -108,6 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 button.classList.add('quiz-option');
                 button.innerText = option.text;
                 button.onclick = function() { checkAnswer(option.id); };
+                button.setAttribute('id', 'quiz-button')
                 li.appendChild(button);
                 ul.appendChild(li);
             });

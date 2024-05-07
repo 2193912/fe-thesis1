@@ -62,6 +62,7 @@
         <!--Book-->
         <div class="text-container">
          <h1 style="text-align: center;" id="storyTitle-name">Name of Book</h1> <!--Place story title here-->
+         <h1 style="text-align: center;" id="quiz-finished"> </h1>
          <div id="progress-bar">
              <div id="progress-bar-inner"></div>
          </div>
@@ -70,15 +71,18 @@
          <div id="story-container">
              <img src="" alt="Story Image" id="story-image" style="display:none;">
              <p id="story-text"></p>
-             <button id="next-button">Next</button>
+             <button id="next-button">NEXT</button>
          </div>
+         <div id="quiz-result-greeting"></div>
         </div>
 
         <!-- Quiz Modal -->
         <div id="quiz-modal" class="modal">
          <div class="modal-content">
              <span class="close" id="exit-close">&times;</span>
-             <div id="question-time"><h2>Question Time</h2></div>
+             <div id="question-time">
+               <h2>Question Time</h2>
+            </div>
              <p id="quiz-question">Quiz question will appear here.</p>
              <ul id="quiz-options">
                  <!-- Quiz options will be dynamically populated -->

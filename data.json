@@ -8,7 +8,7 @@
     ],
     "quiz": [
         {
-            "question": "mimimumhfyjfyju?",
+            "question": "If you couldn’t be convicted of any one type of crime, what criminal charge would you like to be immune to?",
             "options": [
                 { "id": 1, "text": "ret" },
                 { "id": 2, "text": "correct" },
