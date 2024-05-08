@@ -212,6 +212,8 @@ sr.reveal(`.discount__images`, {origin: 'right'})
 
 
 function openBook(title) {
-  localStorage.setItem('selectedTitle', JSON.stringify({ titleText: title }));
+  // Store the selected title in localStorage to pass it to book.html
+  localStorage.setItem('selectedTitle', title);
+  // Open book.html
   window.location.href = 'book.html';
 }

@@ -6,21 +6,24 @@ document.addEventListener('DOMContentLoaded', function() {
     let progressBarWidth = 0;
     let quizModal = 1;
 
+    // Retrieve the selected title from localStorage
+    const selectedTitle = localStorage.getItem('selectedTitle');
+
     // Data.json store variable
     let storyData;
 
     fetch('data.json')
         .then((response) => response.json())
         .then(data => {
-            storyData = data;
+            storyData = data[selectedTitle]; // Use the selected title
             initializePage();
         });
 
     function initializePage() {
-        document.getElementById('storyTitle-image').src = storyData.title.titleImageUrl;
+        document.getElementById('storyTitle-image').src = storyData.titleImageUrl;
         document.getElementById('storyTitle-image').style.display = 'block';
         document.getElementById('next-button').addEventListener('click', nextPage);
-        showInstructions('Title: ' + storyData.title.titleText);
+        showInstructions('Title: ' + storyData.titleText);
         updateProgressBar();
     }
 
