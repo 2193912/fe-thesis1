@@ -1,51 +1,62 @@
 {
-    "title": {"titleText":"Titi mo malaki","titleImageUrl": "assets/img/images/titleImage1.jpg"},
-    "story": [
-        { "text": "gong gang gong gang ga", "imageUrl": "assets/img/images/image1.jpg" },
-        { "text": "gugu gaga guugaga", "imageUrl": "assets/img/images/image2.jpg" },
-        { "text": "sabutatasabutata", "imageUrl": "assets/img/images/image3.jpg" },
-        { "text": "titattututut", "imageUrl": "assets/img/images/image4.jpg" }
-    ],
-    "quiz": [
-        {
-            "question": "If you couldn’t be convicted of any one type of crime, what criminal charge would you like to be immune to?",
-            "options": [
-                { "id": 1, "text": "ret" },
-                { "id": 2, "text": "correct" },
-                { "id": 3, "text": "can" },
-                { "id": 4, "text": "bar" }
-            ],
-            "correctAnswer": 2
-        },
-        {
-            "question": "maminihtdhftyhninn?",
-            "options": [
-                { "id": 1, "text": "correct" },
-                { "id": 2, "text": "Reprfesfion " },
-                { "id": 3, "text": "Represfesf" },
-                { "id": 4, "text": "Represafaw" }
-            ],
-            "correctAnswer": 1
-        },
-        {
-            "question": "dfemfgdhsrtsfef?",
-            "options": [
-                { "id": 1, "text": "Rerefs" },
-                { "id": 2, "text": "fsefsB" },
-                { "id": 3, "text": "correct" },
-                { "id": 4, "text": "esfD" }
-            ],
-            "correctAnswer": 3
-        },
-        {
-            "question": "gsrdgrsdgdrtghdrthrdt?",
-            "options": [
-                { "id": 1, "text": "fesfse" },
-                { "id": 2, "text": "bxdbdrg" },
-                { "id": 3, "text": "kyutsr" },
-                { "id": 4, "text": "Correct" }
-            ],
-            "correctAnswer": 4
-        }
-    ]
+    "First Title": {
+        "titleText": "First Title",
+        "titleImageUrl": "assets/img/images/titleImage1.jpg",
+        "story": [
+            { "text": "Story for first title", "imageUrl": "assets/img/images/image1.jpg" },
+            { "text": "Another story for first title", "imageUrl": "assets/img/images/image2.jpg" }
+        ],
+        "quiz": [
+            {
+                "question": "Quiz question for first title?",
+                "options": [
+                    { "id": 1, "text": "Option 1" },
+                    { "id": 2, "text": "Option 2" },
+                    { "id": 3, "text": "Option 3" },
+                    { "id": 4, "text": "Option 4" }
+                ],
+                "correctAnswer": 1
+            },
+            {
+                "question": "Another quiz question for first title?",
+                "options": [
+                    { "id": 1, "text": "Option A" },
+                    { "id": 2, "text": "Option B" },
+                    { "id": 3, "text": "Option C" },
+                    { "id": 4, "text": "Option D" }
+                ],
+                "correctAnswer": 3
+            }
+        ]
+    },
+    "Second Title": {
+        "titleText": "Second Title",
+        "titleImageUrl": "assets/img/images/titleImage2.jpg",
+        "story": [
+            { "text": "Story for second title", "imageUrl": "assets/img/images/image3.jpg" },
+            { "text": "Another story for second title", "imageUrl": "assets/img/images/image4.jpg" }
+        ],
+        "quiz": [
+            {
+                "question": "Quiz question for second title?",
+                "options": [
+                    { "id": 1, "text": "Option 1" },
+                    { "id": 2, "text": "Option 2" },
+                    { "id": 3, "text": "Option 3" },
+                    { "id": 4, "text": "Option 4" }
+                ],
+                "correctAnswer": 2
+            },
+            {
+                "question": "Another quiz question for second title?",
+                "options": [
+                    { "id": 1, "text": "Option A" },
+                    { "id": 2, "text": "Option B" },
+                    { "id": 3, "text": "Option C" },
+                    { "id": 4, "text": "Option D" }
+                ],
+                "correctAnswer": 4
+            }
+        ]
+    }
 }
