@@ -404,7 +404,6 @@ body.dark-theme {
 .featured__title {
   font-size: var(--smaller-font-size);
   margin-bottom: .5rem;
-  color: #333;
 }
 
 .featured__prices {
