@@ -272,4 +272,8 @@ li {
 }
 
 
-
+body {
+    background-image: url('/assets/img/AboutUsBackGround.svg'); /* replace with your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
