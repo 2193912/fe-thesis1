@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Interactive Book Experience</title>
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link href="assets/css/cards.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    </head>
+
+    <body>
+        <!--navigation bar-->
+        <header class="header" id="header">
+            <nav class="nav container">
+               <a href="#" class="nav__logo">
+                  <i class="ri-book-3-line"></i> ClariThink
+               </a>
+               
+               <div class="nav__menu">
+                  <ul class="nav__list">
+                     <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                           <i class="ri-home-line"></i>
+                           <span>Home</span>
+                        </a>
+                     </li>
+   
+                     <li class="nav__item">
+                        <a href="#featured" class="nav__link">
+                           <i class="ri-book-3-line"></i>
+                           <span>Library</span>
+                        </a>
+                     </li>
+   
+                     <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                           <i class="ri-bookmark-line"></i>
+                           <span>Upload</span>
+                        </a>
+                     </li>
+   
+                     <li class="nav__item">
+                        <a href="#testimonial" class="nav__link">
+                           <i class="ri-message-3-line"></i>
+                           <span>About Us</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+   
+               <div class="nav__actions">
+                  <!-- Search button -->
+                  <i class="ri-search-line search-button" id="search-button"></i>
+                  <!-- Theme button -->
+                  <i class="ri-moon-line change-theme" id="theme-button"></i>
+               </div>
+            </nav>
+         </header>
+
+        <!--Book-->
+        <div class="text-container">
+         <h1 style="text-align: center;" id="storyTitle-name">Name of Book</h1> <!--Place story title here-->
+         <h1 style="text-align: center;" id="quiz-finished"> </h1>
+         <div id="progress-bar">
+             <div id="progress-bar-inner"></div>
+         </div>
+         <div id="instructions"></div>
+          <img src="" alt="Story Title Image" id="storyTitle-image" style="display:none;">
+         <div id="story-container">
+             <img src="" alt="Story Image" id="story-image" style="display:none;">
+             <p id="story-text"></p>
+             <button id="next-button">NEXT</button>
+         </div>
+         <div id="quiz-result-greeting"></div>
+        </div>
+
+        <!-- Quiz Modal -->
+        <div id="quiz-modal" class="modal">
+         <div class="modal-content">
+             <span class="close" id="exit-close">&times;</span>
+             <div id="question-time">
+               <h2>Question Time</h2>
+            </div>
+             <p id="quiz-question">Quiz question will appear here.</p>
+             <ul id="quiz-options">
+                 <!-- Quiz options will be dynamically populated -->
+             </ul>
+             <button id="continue-button" style="display:none; ">Continue</button>
+             <p id="result" style="margin-top: 25px;"></p>
+         </div>
+        </div>
+
+     <script src="assets/js/cards.js"></script>
+    </body>
+</html>
