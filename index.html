@@ -43,13 +43,6 @@
                   </li>
 
                   <li class="nav__item">
-                     <a href="#upload" class="nav__link">
-                        <i class="ri-file-upload-fill"></i>
-                        <span>Upload</span>
-                     </a>
-                  </li>
-
-                  <li class="nav__item">
                      <a href="#testimonial" class="nav__link">
                         <i class="ri-message-3-line"></i>
                         <span>About Us</span>
@@ -61,6 +54,8 @@
             <div class="nav__actions">
                <!-- Theme button -->
                <i class="ri-moon-line change-theme" id="theme-button"></i>
+               <!-- Upload button -->
+               <i class="ri-file-upload-fill upload-button" id="upload-button"></i>
             </div>
          </nav>
       </header>
@@ -324,17 +319,29 @@
             </div>
          </section>
          <!--==================== Upload ====================-->
-         <div class="container" id="upload">
-            <!-- Upload form content goes here -->
-            <h1>Upload Your Story</h1>
-            <form id="storyForm" style="display: none;">
-              <label for="title">Title:</label>
-              <input type="text" id="title" name="title" required>
-              <label for="story">Story:</label>
-              <textarea id="story" name="story" rows="10" required></textarea>
-              <button type="submit">Upload</button>
-            </form>
-          </div>
+      <div class="upload grid" id="upload-content">
+         <form action="" class="upload__form grid">
+            <h3 class="upload__title">Upload Story</h3>
+            
+            <div class="upload__group grid">
+               <div>
+                  <label for="upload-title" class="upload__label">Title</label>
+                  <input type="title" placeholder="Input the title of the story" id="upload-title" class="upload__input">
+               </div>
+               
+               <div>
+                  <label for="upload-content" class="upload__label">Content</label>
+                  <input type="content" placeholder="Input the story" id="upload-content" class="upload__input">
+               </div>
+            </div>
+
+            <div>
+               <button type="submit" class="upload__button button">Submit</button>
+            </div>
+         </form>
+
+         <i class="ri-close-line upload__close" id="upload-close"></i>
+      </div>
 
          <!--==================== About Us ====================-->
          <section class="testimonial section" id="testimonial">
