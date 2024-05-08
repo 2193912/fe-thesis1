@@ -209,3 +209,9 @@ sr.reveal(`.home__images`, {delay: 600})
 sr.reveal(`.services__card`, {interval: 100})
 sr.reveal(`.discount__data`, {origin: 'left'})
 sr.reveal(`.discount__images`, {origin: 'right'})
+
+
+function openBook(title) {
+  localStorage.setItem('selectedTitle', JSON.stringify({ titleText: title }));
+  window.location.href = 'book.html';
+}
