@@ -1,14 +1,10 @@
-/*=============== SEARCH ===============*/
-const searchButton = document.getElementById('search-button'),
-      searchClose = document.getElementById('search-close'),
-      searchContent = document.getElementById('search-content')
 
-/*=============== LOGIN ===============*/
+/*=============== UPLOAD ===============*/
 const uploadButton = document.getElementById('upload-button'),
       uploadClose = document.getElementById('upload-close'),
       uploadContent = document.getElementById('upload-content')
 
-/*===== LOGIN SHOW =====*/
+/*===== UPLOAD SHOW =====*/
 /* Validate if constant exists */
 if(uploadButton){
   uploadButton.addEventListener('click', () =>{
@@ -16,7 +12,7 @@ if(uploadButton){
   })
 }
   
-/*===== LOGIN HIDDEN =====*/
+/*===== UPLOAD HIDDEN =====*/
 /* Validate if constant exists */
 if(uploadClose){
   uploadClose.addEventListener('click', () =>{
