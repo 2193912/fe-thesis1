@@ -385,8 +385,9 @@ body.dark-theme {
 }
 
 .featured__title {
-  font-size: var(--h2-font-size);
+  font-size: var(--smaller-font-size);
   margin-bottom: .5rem;
+  color: #333;
 }
 
 .featured__prices {
@@ -406,7 +407,7 @@ body.dark-theme {
 }
 
 .featured__actions {
-  display: inline-flex;
+  display: inline-block;
   flex-direction: column;
   row-gap: .75rem;
   position: absolute;
