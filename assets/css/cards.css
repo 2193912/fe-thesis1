@@ -4,7 +4,7 @@
     width: 80%;
     height: auto;
     margin: 20px auto;
-    padding: 50px;
+    padding: 10px;
     background-color: #FAF9F6;
     box-shadow: 0 0 40px rgba(0,0,0,0.1);
     border: 2px solid var(--border-color);
@@ -30,7 +30,7 @@
 #quiz-result-text {
     text-align: center;
     position: relative;
-    top: -40px;
+    top: 50px;
     color: black;
 }
 
