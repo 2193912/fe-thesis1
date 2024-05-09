@@ -1,21 +1,21 @@
-/*=============== SEARCH ===============*/
-const searchButton = document.getElementById('search-button'),
-      searchClose = document.getElementById('search-close'),
-      searchContent = document.getElementById('search-content')
+/*=============== UPLOAD ===============*/
+const uploadButton = document.getElementById('upload-button'),
+      uploadClose = document.getElementById('upload-close'),
+      uploadContent = document.getElementById('upload-content')
 
-/*===== SEARCH SHOW =====*/
+/*===== UPLOAD SHOW =====*/
 /* Validate if constant exists */
-if(searchButton){
-  searchButton.addEventListener('click', () =>{
-    searchContent.classList.add('show-search')
+if(uploadButton){
+  uploadButton.addEventListener('click', () =>{
+    uploadContent.classList.add('show-upload')
   })
 }
   
-/*===== SEARCH HIDDEN =====*/
+/*===== UPLOAD HIDDEN =====*/
 /* Validate if constant exists */
-if(searchClose){
-  searchClose.addEventListener('click', () =>{
-    searchContent.classList.remove('show-search')
+if(uploadClose){
+  uploadClose.addEventListener('click', () =>{
+    uploadContent.classList.remove('show-upload')
   })
 }
 
@@ -69,20 +69,7 @@ let swiperFeatured = new Swiper('.featured__swiper', {
   },
 })
 
-/*=============== NEW SWIPER ===============*/
-let swiperNew = new Swiper('.new__swiper', {
-  loop: true,
-  spaceBetween: 16,
-  slidesPerView: 'auto',
-
-  breakpoints:{
-    1150: {
-      slidesPerView: 3,
-    },
-  },
-})
-
-/*=============== TESTIMONIAL SWIPER ===============*/
+/*=============== TEAM SWIPER ===============*/
 let swiperTestimonial = new Swiper('.testimonial__swiper', {
   loop: true,
   spaceBetween: 16,
