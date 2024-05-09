@@ -1,12 +1,14 @@
 .text-container {
-    position: relative;
+    position:relative;
     top: 150px;
     width: 80%;
     height: auto;
     margin: 20px auto;
     padding: 10px;
-    background: #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #FAF9F6;
+    box-shadow: 0 0 40px rgba(0,0,0,0.1);
+    border: 2px solid var(--border-color);
+    transition: border .4s, background-color .4s;
 }
 
 #instructions {
@@ -78,7 +80,7 @@ li {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #FAF9F6;
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -105,7 +107,7 @@ li {
 
 #story-text {
     font-size: 18px;
-    color: black;
+    color: hsl(230, 16%, 45%);
 }
 
 
@@ -119,8 +121,9 @@ li {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
-#story-container {
-    padding-bottom: 80px;
+
+#storyTitle-name {
+    font: Poppins;
 }
 
 #storyTitle-image {
@@ -185,11 +188,11 @@ li {
 
 #progress-bar {
     margin: 0 auto;
-    width: 80%;
-    height: 20px;
+    width: 90%;
+    height: 10px;
     background-color: #f1f1f1;
     outline: solid;
-    outline-color: orange;
+    outline-color: hsl(230, 16%, 45%);
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -197,7 +200,7 @@ li {
 #progress-bar-inner {
     height: 100%;
     width: 0;
-    background-color: orange;
+    background-color: #F46051;
     transition: width 0.3s ease;
     border-radius: 10px; /* Rounded corners */
 }
@@ -218,7 +221,7 @@ li {
 }
 
 #next-button:hover {
-    background-color: #aaa;
+    background-color: #FAF9F6;
 }
 
 #next-button:active {
@@ -270,10 +273,3 @@ li {
     top: 10px;
     text-indent: 30px;
 }
-
-
-body {
-    background-image: url('/assets/img/AboutUsBackGround.svg'); /* replace with your background image */
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
