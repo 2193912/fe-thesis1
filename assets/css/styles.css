@@ -126,7 +126,7 @@ body.dark-theme {
   box-shadow: 0 2px 8px hsla(0, 0%, 0%, .4);
 }
 
-.dark-theme .search,
+.dark-theme .text-container,
 .dark-theme .login {
   background-color: hsla(230, 12%, 8%, .6);
 }
