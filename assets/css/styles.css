@@ -7,13 +7,13 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: #F46051;
+  --first-color: #c13526;
   --title-color: #24293D;
   --text-color: hsl(230, 16%, 45%);
   --border-color: #495176;
   --white-color: hsl(0, 0%, 100%);
-  --body-color: 	#FAF9F6;
-  --container-color: #FAF9F6;
+  --body-color: 	#f0e8d0;
+  --container-color: #ebebda;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -104,10 +104,10 @@ img {
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --title-color: hsl(230, 48%, 85%);
-  --text-color: hsl(230, 16%, 70%);
-  --border-color: hsl(230, 12%, 18%);
-  --body-color: hsl(230, 12%, 8%);
-  --container-color: hsl(230, 12%, 12%);
+  --text-color: hsl(230, 30%, 81%);
+  --border-color: #1b1f2e;
+  --body-color:#282E48;
+  --container-color: #353c5c;
 }
 
 /*========== 
