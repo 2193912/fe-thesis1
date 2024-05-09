@@ -1,12 +1,12 @@
 /*=============== UPLOAD ===============*/
-const uploadButton = document.getElementById('upload-button'),
+const uploadNav = document.getElementById('upload-nav'),
       uploadClose = document.getElementById('upload-close'),
       uploadContent = document.getElementById('upload-content')
 
 /*===== UPLOAD SHOW =====*/
 /* Validate if constant exists */
-if(uploadButton){
-  uploadButton.addEventListener('click', () =>{
+if(uploadNav){
+  uploadNav.addEventListener('click', () =>{
     uploadContent.classList.add('show-upload')
   })
 }
