@@ -1,21 +1,22 @@
-/*=============== SEARCH ===============*/
-const searchButton = document.getElementById('search-button'),
-      searchClose = document.getElementById('search-close'),
-      searchContent = document.getElementById('search-content')
 
-/*===== SEARCH SHOW =====*/
+/*=============== UPLOAD ===============*/
+const uploadButton = document.getElementById('upload-button'),
+      uploadClose = document.getElementById('upload-close'),
+      uploadContent = document.getElementById('upload-content')
+
+/*===== UPLOAD SHOW =====*/
 /* Validate if constant exists */
-if(searchButton){
-  searchButton.addEventListener('click', () =>{
-    searchContent.classList.add('show-search')
+if(uploadButton){
+  uploadButton.addEventListener('click', () =>{
+    uploadContent.classList.add('show-upload')
   })
 }
   
-/*===== SEARCH HIDDEN =====*/
+/*===== UPLOAD HIDDEN =====*/
 /* Validate if constant exists */
-if(searchClose){
-  searchClose.addEventListener('click', () =>{
-    searchContent.classList.remove('show-search')
+if(uploadClose){
+  uploadClose.addEventListener('click', () =>{
+    uploadContent.classList.remove('show-upload')
   })
 }
 
