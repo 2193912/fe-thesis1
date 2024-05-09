@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: #c13526;
+  --first-color: #c03c2d;
   --title-color: #24293D;
   --text-color: hsl(230, 16%, 45%);
   --border-color: #495176;
@@ -127,7 +127,7 @@ body.dark-theme {
 }
 
 .dark-theme .text-container,
-.dark-theme .login {
+.dark-theme .upload {
   background-color: hsla(230, 12%, 8%, .6);
 }
 
