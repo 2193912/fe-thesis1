@@ -337,17 +337,21 @@
             <div class="upload__group grid">
                <div>
                   <label for="upload-title" class="upload__label">Title</label>
-                  <input type="title" placeholder="Input the title of the story" id="upload-title" class="upload__input">
+                  <input type="title" placeholder="Input the title of the story" id="upload-title" class="upload__input" maxlength="50">
                </div>
                
                <div>
                   <label for="upload-content" class="upload__label">Content</label>
-                  <input type="content" placeholder="Input the story" id="upload-content" class="upload__input">
-               </div>
+                  <textarea type="content" placeholder="Input the story" id="upload-content" class="upload__textarea" onkeyup="countWords(this)"></textarea>
+              </div>
+              
+              <div>
+                  <label class="upload__counter">Word count: <span id= "count__words" class="upload__number"></span></label>
+              </div>
             </div>
 
             <div>
-               <button type="submit" class="upload__button button">Submit</button>
+               <button type="submit" class="upload__button button" id="upload-button">Submit</button>
             </div>
          </form>
 

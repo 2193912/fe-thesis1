@@ -49,6 +49,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentQuestion == storyData.quiz.length) {
             showResults();
         }
+
+
+    // send post here
     }
 
     document.getElementById('continue-button').addEventListener('click', function() {
