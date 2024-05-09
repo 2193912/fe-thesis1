@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
             return; // wait for quiz submission
         }
 
-        if (currentPage < storyData.story.length) {
-            const story = storyData.story[currentPage];
+        if (currentPage < storyData.summary.length) {
+            const story = storyData.summary[currentPage];
             document.getElementById('story-text').innerText = story.text;
             document.getElementById('story-image').src = story.imageUrl;
             document.getElementById('story-image').style.display = 'block';
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateProgressBar() {
-        progressBarWidth = ((currentPage) / (storyData.story.length)) * 100;
+        progressBarWidth = ((currentPage) / (storyData.summary.length)) * 100;
         document.getElementById('progress-bar-inner').style.width = progressBarWidth + '%';
     }
 

@@ -1,0 +1,62 @@
+{
+    "First Title": {
+        "titleText": "First Title",
+        "titleImageUrl": "assets/img/images/titleImage1.jpg",
+        "story": [
+            { "text": "Story for first title", "imageUrl": "assets/img/images/image1.jpg" },
+            { "text": "Another story for first title", "imageUrl": "assets/img/images/image2.jpg" }
+        ],
+        "quiz": [
+            {
+                "question": "Quiz question for first title?",
+                "options": [
+                    { "id": 1, "text": "Option 1" },
+                    { "id": 2, "text": "Option 2" },
+                    { "id": 3, "text": "Option 3" },
+                    { "id": 4, "text": "Option 4" }
+                ],
+                "correctAnswer": 1
+            },
+            {
+                "question": "Another quiz question for first title?",
+                "options": [
+                    { "id": 1, "text": "Option A" },
+                    { "id": 2, "text": "Option B" },
+                    { "id": 3, "text": "Option C" },
+                    { "id": 4, "text": "Option D" }
+                ],
+                "correctAnswer": 3
+            }
+        ]
+    },
+    "Second Title": {
+        "titleText": "Second Title",
+        "titleImageUrl": "assets/img/images/titleImage2.jpg",
+        "story": [
+            { "text": "Story for second title", "imageUrl": "assets/img/images/image3.jpg" },
+            { "text": "Another story for second title", "imageUrl": "assets/img/images/image4.jpg" }
+        ],
+        "quiz": [
+            {
+                "question": "Quiz question for second title?",
+                "options": [
+                    { "id": 1, "text": "Option 1" },
+                    { "id": 2, "text": "Option 2" },
+                    { "id": 3, "text": "Option 3" },
+                    { "id": 4, "text": "Option 4" }
+                ],
+                "correctAnswer": 2
+            },
+            {
+                "question": "Another quiz question for second title?",
+                "options": [
+                    { "id": 1, "text": "Option A" },
+                    { "id": 2, "text": "Option B" },
+                    { "id": 3, "text": "Option C" },
+                    { "id": 4, "text": "Option D" }
+                ],
+                "correctAnswer": 4
+            }
+        ]
+    }
+}

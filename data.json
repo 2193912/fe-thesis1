@@ -1,61 +1,411 @@
 {
-    "First Title": {
-        "titleText": "First Title",
-        "titleImageUrl": "assets/img/images/titleImage1.jpg",
-        "story": [
-            { "text": "Story for first title", "imageUrl": "assets/img/images/image1.jpg" },
-            { "text": "Another story for first title", "imageUrl": "assets/img/images/image2.jpg" }
+    "The Three Little Pigs": {
+        "titleText": "The Three Little Pigs",
+        "titleImageUrl": "https://assets.americanliterature.com/images/short-stories-for-children/three-little-pigs.jpg",
+        "story": "Once upon a time, in a faraway land, there lived an old mother pig with her three little pigs. As they grew older, she knew she couldn't provide for them anymore, so she sent them out into the world to seek their fortunes.\r\n\r\nThe first little pig, being lazy and preferring an easy life, hastily built his house out of straw. The second pig, slightly more diligent but still not entirely committed, opted for a house made of sticks. However, the third pig, wise and hardworking, dedicated himself to constructing a sturdy house of bricks, knowing it would offer the best protection.\r\n\r\nSoon enough, a cunning and hungry wolf roamed into their neighborhood. Catching a whiff of the pigs, he saw them as a delectable meal. He approached the first straw house, easily blowing it down with a few huffs and puffs. The second house, made of sticks, fared no better under the wolf's breath.\r\n\r\nBut when the wolf arrived at the third pig's brick house, his efforts to blow it down proved futile. The solid construction stood firm against his strongest blows. Frustrated, the wolf devised a new plan. He climbed onto the roof and attempted to enter through the chimney.\r\n\r\nMeanwhile, inside the brick house, the three little pigs huddled together, fearful but determined. The clever third pig quickly set a pot of water to boil over the fireplace, anticipating the wolf's arrival. As the wolf descended the chimney, the third pig removed the lid, sending the surprised predator tumbling into the scalding water below.\r\n\r\nWith the threat neutralized, the pigs rejoiced in their victory. They had learned the value of hard work and resilience, understanding that careful planning and determination could overcome even the most daunting challenges.\r\n\r\nThe tale serves as a timeless lesson, teaching children the importance of diligence, preparedness, and ingenuity in the face of adversity. It emphasizes the rewards of perseverance and resourcefulness, showing that with effort and determination, one can triumph over any obstacle.",
+        "summary": [
+            {
+                "text": " \"Once upon a time, in a faraway land, there lived an old mother pig with her three little pigs. As they grew older, she knew she couldn't provide for them anymore, so she sent them out into the world to seek their fortunes. The second pig, slightly more diligent but still not entirely committed, opts for a house made of sticks. The third pig, wise and hardworking, dedicates himself to constructing a sturdy house of bricks, knowing it would offer the best protection. Soon enough, a cunning and hungry wolf roamed into their neighborhood",
+                "imageUrl": "generated_images/The Three Little Pigs/generated_image_part1.png"
+            },
+            {
+                "text": "He saw them as a delectable meal. He approached the first straw house, blowing it down with a few huffs and puffs. The second house, made of sticks, fared no better under the wolf's breath. But when he arrived at the third pig's brick house, his efforts to blow it down proved futile. The solid construction stood firm against his strongest blows",
+                "imageUrl": "generated_images/The Three Little Pigs/generated_image_part2.png"
+            },
+            {
+                "text": "The wolf devised a new plan. The wolf climbs onto the roof and attempts to enter through the chimney. Inside the brick house, the three little pigs huddle together, fearful but determined. The third pig quickly sets a pot of water to boil over the fireplace, anticipating the wolf's arrival. The predator is tumbling into the scalding water below",
+                "imageUrl": "generated_images/The Three Little Pigs/generated_image_part3.png"
+            },
+            {
+                "text": "The tale serves as a timeless lesson, teaching children the importance of diligence, preparedness, and ingenuity in the face of adversity. It emphasizes the rewards of perseverance and resourcefulness, showing that with effort and determination, one can triumph over any obstacle.\"",
+                "imageUrl": "generated_images/The Three Little Pigs/generated_image_part4.png"
+            }
         ],
         "quiz": [
             {
-                "question": "Quiz question for first title?",
+                "context": "The third pig, wise and hardworking, dedicates himself to constructing a sturdy house of bricks, knowing it would offer the best protection.",
+                "question": "What does the third pig want from building a house of bricks?",
                 "options": [
-                    { "id": 1, "text": "Option 1" },
-                    { "id": 2, "text": "Option 2" },
-                    { "id": 3, "text": "Option 3" },
-                    { "id": 4, "text": "Option 4" }
+                    {
+                        "id": 1,
+                        "text": "Additional protection"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Protection"
+                    }
+                ],
+                "correctAnswer": 2
+            },
+            {
+                "context": "But when he arrived at the third pig's brick house, his efforts to blow it down proved futile.",
+                "question": "What type of house was the third pig's?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "Stilts"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Corrugated metal"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Cinderblock"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Brick house"
+                    }
+                ],
+                "correctAnswer": 4
+            },
+            {
+                "context": "Inside the brick house, the three little pigs huddle together, fearful but determined.",
+                "question": "Where do the three little pigs huddle?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "Brick house"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Stilts"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Corrugated metal"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Cinderblock"
+                    }
                 ],
                 "correctAnswer": 1
             },
             {
-                "question": "Another quiz question for first title?",
+                "context": "The tale serves as a timeless lesson, teaching children the importance of diligence, preparedness, and ingenuity in the face of adversity.",
+                "question": "Who learns the importance of diligence, preparedness, and ingenuity in adversity?",
                 "options": [
-                    { "id": 1, "text": "Option A" },
-                    { "id": 2, "text": "Option B" },
-                    { "id": 3, "text": "Option C" },
-                    { "id": 4, "text": "Option D" }
+                    {
+                        "id": 1,
+                        "text": "Children"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Mothers"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Own kids"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Disabled children"
+                    }
+                ],
+                "correctAnswer": 1
+            }
+        ]
+    },
+    "Jack and the Beanstalk": {
+        "titleText": "Jack and the Beanstalk",
+        "titleImageUrl": "https://assets.americanliterature.com/images/short-stories-for-children/jack-and-the-beanstalk.jpg",
+        "story": "Once upon a time, a poor widow and her son Jack lived in a humble cottage. In dire need of money, Jack's mother sent him to the market to sell their only cow. Along the way, a stranger offered Jack five magic beans in exchange for the cow. Despite his mother's skepticism, Jack accepted the trade, only to face her wrath upon his return. Disheartened, Jack went to bed hungry that night.\r\n\r\nTo his amazement, the next morning, Jack discovered a colossal beanstalk towering outside his window, sprung from the magic beans. Curiosity piqued, he climbed the beanstalk, finding himself in a kingdom in the clouds, inhabited by a giant and his wife. Seeking refuge and food, Jack stumbled into the giant's home, where the kind-hearted wife provided him with sustenance.\r\n\r\nHowever, their respite was short-lived as the giant returned, his intimidating presence sending Jack into hiding. With thunderous words, the giant proclaimed his intention to grind the bones of an Englishman for bread. Despite his fear, Jack managed to sneak away with a sack of the giant's gold coins while he slept, bringing newfound wealth to his grateful mother.\r\n\r\nJack's daring exploits continued as he returned to the giant's abode twice more, each time eluding the giant's detection while acquiring a magical hen that laid golden eggs and a harp that played enchanting melodies. However, on his final visit, Jack's luck nearly ran out when the harp's cry alerted the giant, prompting a frantic chase.\r\n\r\nIn a dramatic escape, Jack raced down the beanstalk, closely pursued by the enraged giant. Thinking quickly, Jack retrieved an axe and began chopping down the towering plant. With a thunderous crash, the beanstalk toppled, sending the giant plummeting to his demise.\r\n\r\nWith the threat vanquished and their newfound wealth secured, Jack and his mother lived happily ever after, their adventures forever etched in the annals of folklore.",
+        "summary": [
+            {
+                "text": " \"Once upon a time, a poor widow and her son Jack lived in a humble cottage. In dire need of money, Jack's mother sent him to the market to sell their only cow. Despite his mother's skepticism, Jack accepted the trade, only to face her wrath upon his return. The next morning, Jack discovers a colossal beanstalk towering outside his window, sprung from the magic beans. Curiosity piqued, he finds himself in a kingdom in the clouds, inhabited by a giant and his wife",
+                "imageUrl": "generated_images/Jack and the Beanstalk/generated_image_part1.png"
+            },
+            {
+                "text": "The kind-hearted wife provided him with sustenance. The giant returns to the giant's abode twice more, each time eluding Jack's detection while acquiring a magical hen that laid golden eggs and a harp that played enchanting melodies. With thunderous words, the giant declares his intention to grind the bones of an Englishman for bread. Jack sneaks away with sack of gold coins while he sleep, bringing newfound wealth to his grateful mother. On his final visit, Jack's luck nearly ran out when the harp's cry alerted the giant, prompting a frantic chase",
+                "imageUrl": "generated_images/Jack and the Beanstalk/generated_image_part2.png"
+            },
+            {
+                "text": "In a dramatic escape, Jack raced down the beanstalk, closely pursued by the enraged giant. The beanstalk toppled, sending the giant plummeting to his demise. With the threat vanquished and their newfound wealth secured, Jack and his mother lived happily ever after, their adventures forever etched in the annals of folklore.\"",
+                "imageUrl": "generated_images/Jack and the Beanstalk/generated_image_part3.png"
+            }
+        ],
+        "quiz": [
+            {
+                "context": "In dire need of money, Jack's mother sent him to the market to sell their only cow.",
+                "question": "Who sent Jack to the market?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "Sister"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Daughter"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Step-mom"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Mother"
+                    }
+                ],
+                "correctAnswer": 4
+            },
+            {
+                "context": "Jack sneaks away with sack of gold coins while he sleep, bringing newfound wealth to his grateful mother.",
+                "question": "Who sneaks away with gold coins while he sleeps?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "Jack"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Evan"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Steve"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Alec"
+                    }
+                ],
+                "correctAnswer": 1
+            },
+            {
+                "context": "The beanstalk toppled, sending the giant plummeting to his demise.",
+                "question": "What happened to the giant?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "Eventual demise"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Undoing"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Demise"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Downfall"
+                    }
                 ],
                 "correctAnswer": 3
             }
         ]
     },
-    "Second Title": {
-        "titleText": "Second Title",
-        "titleImageUrl": "assets/img/images/titleImage2.jpg",
-        "story": [
-            { "text": "Story for second title", "imageUrl": "assets/img/images/image3.jpg" },
-            { "text": "Another story for second title", "imageUrl": "assets/img/images/image4.jpg" }
+    "The Bogey-Beast": {
+        "titleText": "The Bogey-Beast",
+        "titleImageUrl": "https://assets.americanliterature.com/images/short-stories-for-children/the-bogey-beast.jpg",
+        "story": "Once upon a time, there lived a woman who radiated cheerfulness despite her age, poverty, and solitude. In her humble abode, she eked out a meager living by running errands for her neighbors, accepting small tokens of gratitude in return. Despite her circumstances, she maintained a buoyant spirit, always appearing as lively and content as if she had no wants in the world.\n\nOne summer evening, while trotting along the high road to her cottage, she stumbled upon a large black pot abandoned in a ditch. Surprised by her unexpected find, she pondered its purpose and origin. Seeing no one around, she decided to claim it for herself, thinking it might serve as a decorative flower pot for her window.\n\nUpon lifting the lid, her amazement knew no bounds. The pot was brimming with gleaming gold coins. Overwhelmed with disbelief, she exclaimed at her sudden fortune. After marveling at her newfound wealth, she devised a plan to transport it home, eventually opting to tie her shawl to the pot and drag it behind her.\n\nAs she trudged along, her mind raced with possibilities. She fantasized about purchasing a grand house and living a life of leisure, or perhaps burying the treasure in her garden. Lost in her reverie, she momentarily halted to rest and admire her prize. To her astonishment, the pot no longer contained gold but instead revealed a lump of silver.\n\nUndeterred by the change in fortune, she rationalized the benefits of owning silver over gold. With silver, she reasoned, there would be less risk of theft and less hassle to manage. Energized by her newfound wealth, she continued her journey, only to discover that the silver had transformed into a lump of iron.\n\nOnce again, she adapted to her circumstances, considering the practicality of selling iron for penny pieces. Delighted by the prospect of financial gain, she eagerly resumed her trek, her mind buzzing with plans for her newfound wealth. But as she paused for another break, she found the iron had morphed into a large stone.\n\nThis time, instead of disappointment, she saw opportunity. Thrilled by the idea of using the stone to prop open her gate, she hastened home. Upon reaching her cottage, she unlatched the gate and turned to retrieve her shawl from the stone. But to her surprise, the stone transformed before her eyes, growing legs, ears, and a tail until it resembled a mischievous, laughing creature.\n\nAmused by the spectacle, the woman laughed heartily at her encounter with the unexpected \"Bogey-Beast.\" Feeling uplifted by her extraordinary luck, she retired to her cottage, spending the evening chuckling over her adventures.\n\nIn the end, despite the twists and turns of fortune, the woman remained resilient and lighthearted, finding joy and humor in life's surprises.",
+        "summary": [
+            {
+                "text": " \"Once upon a time, there lived a woman who radiated cheerfulness despite her age, poverty, and solitude. In her humble abode, she eked out a meager living by running errands for her neighbors, accepting small tokens of gratitude in return. Despite her circumstances, she maintains a buoyant spirit, always appearing as lively and content as if she had no wants in the world. One summer evening, while trotting along the high road to her cottage, she finds a large black pot abandoned in a ditch. The pot was brimming with gold coins",
+                "imageUrl": "generated_images/The Bogey-Beast/generated_image_part1.png"
+            },
+            {
+                "text": "Overwhelmed with disbelief, she exclaimed at her sudden fortune. After marveling at her newfound wealth, she devised a plan to transport it home, eventually opting to tie her shawl to the pot and drag it behind her. She fantasized about buying a grand house and living a life of leisure, or perhaps burying the treasure in her garden. Lost in her reverie, she momentarily haltes to rest and admire her prize. The pot no longer contained gold but instead revealed a lump of silver",
+                "imageUrl": "generated_images/The Bogey-Beast/generated_image_part2.png"
+            },
+            {
+                "text": "With silver, she reasoned there would be less risk of theft and less hassle to manage. Once again, she adapted to her circumstances, considering the practicality of selling iron for penny pieces. Delighted by the prospect of financial gain, she eagerly resumes her trek, but as she pauses for another break, she finds the iron had morphed into a large stone. This time, instead of disappointment, she hastened home. Upon reaching her cottage, she unlatched the gate and turned to retrieve her shawl from the stone",
+                "imageUrl": "generated_images/The Bogey-Beast/generated_image_part3.png"
+            },
+            {
+                "text": "The stone transformed before her eyes, growing legs, ears, and a tail until it resembled a mischievous, laughing creature. Amused by the spectacle, the woman laughs heartily at her encounter with the unexpected \"Bogey-Beast.\" Feeling uplifted by her extraordinary luck, she retires to her cottage, spending the evening chuckling over her adventures. The woman remained resilient and lighthearted, finding joy and humor in life's surprises.",
+                "imageUrl": "generated_images/The Bogey-Beast/generated_image_part4.png"
+            }
         ],
         "quiz": [
             {
-                "question": "Quiz question for second title?",
+                "context": "In her humble abode, she eked out a meager living by running errands for her neighbors, accepting small tokens of gratitude in return.",
+                "question": "What did Elizabeth accept in return for running errands for her neighbors?",
                 "options": [
-                    { "id": 1, "text": "Option 1" },
-                    { "id": 2, "text": "Option 2" },
-                    { "id": 3, "text": "Option 3" },
-                    { "id": 4, "text": "Option 4" }
+                    {
+                        "id": 1,
+                        "text": "More cards"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Tokens"
+                    },
+                    {
+                        "id": 3,
+                        "text": "More tokens"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Cards"
+                    }
                 ],
                 "correctAnswer": 2
             },
             {
-                "question": "Another quiz question for second title?",
+                "context": "The pot no longer contained gold but instead revealed a lump of silver",
+                "question": "What no longer contained gold but a lump of silver?",
                 "options": [
-                    { "id": 1, "text": "Option A" },
-                    { "id": 2, "text": "Option B" },
-                    { "id": 3, "text": "Option C" },
-                    { "id": 4, "text": "Option D" }
+                    {
+                        "id": 1,
+                        "text": "Concentrate"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Pot"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Hash oil"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Small bowl"
+                    }
                 ],
-                "correctAnswer": 4
+                "correctAnswer": 2
+            },
+            {
+                "context": "Upon reaching her cottage, she unlatched the gate and turned to retrieve her shawl from the stone",
+                "question": "What did she retrieve from the gate?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "Tulle"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Shawl"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Cardigan"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Lace"
+                    }
+                ],
+                "correctAnswer": 2
+            },
+            {
+                "context": "The woman remained resilient and lighthearted, finding joy and humor in life's surprises.",
+                "question": "What did the woman find joy and humor in?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "Surprises"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Plot twists"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Reveals"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Big things"
+                    }
+                ],
+                "correctAnswer": 1
+            }
+        ]
+    },
+    "The Tortoise & the Hare": {
+        "titleText": "The Tortoise & the Hare",
+        "titleImageUrl": "https://assets.americanliterature.com/images/short-stories-for-children/the-hare-and-the-tortoise.jpg",
+        "story": "A Hare was making fun of the Tortoise one day for being so slow.\n\n\"Do you ever get anywhere?\" he asked with a mocking laugh.\n\n\"Yes,\" replied the Tortoise, \"and I get there sooner than you think. I'll run you a race and prove it.\"\n\nThe Hare was much amused at the idea of running a race with the Tortoise, but for the fun of the thing he agreed. So the Fox, who had consented to act as judge, marked the distance and started the runners off.\n\nThe Hare was soon far out of sight, and to make the Tortoise feel very deeply how ridiculous it was for him to try a race with a Hare, he lay down beside the course to take a nap until the Tortoise should catch up.\n\nThe Tortoise meanwhile kept going slowly but steadily, and, after a time, passed the place where the Hare was sleeping. But the Hare slept on very peacefully; and when at last he did wake up, the Tortoise was near the goal. The Hare now ran his swiftest, but he could not overtake the Tortoise in time.\n\nSlow and steady wins the race.",
+        "summary": [
+            {
+                "text": " \"A Hare is making fun of the Tortoise one day for being so slow. \"Do you ever get anywhere?\" he asks. \"Yes,\" the Tortoise replies, \"and I get there sooner than you think. I'll run you a race and prove it,\" the Hare says",
+                "imageUrl": "generated_images/The Tortoise & the Hare/generated_image_part1.png"
+            },
+            {
+                "text": "The Hare is much amused at the idea of running the race with the Tortise, but for the fun of the thing The Fox, who had consented to act as judge, marked the distance and started the runners off. The Hare was soon far out of sight, and to make the Tortoise feel very deeply how ridiculous it was for him to try a race with a Hare, he lay down beside the course to take a nap until the Tortise should catch up. The Tortoise keeps going slowly but steadily, and, after a time, passed the place where the Hare was sleeping. The Hare wakes up very peacefully",
+                "imageUrl": "generated_images/The Tortoise & the Hare/generated_image_part2.png"
+            },
+            {
+                "text": "But the Tortise is near the goal. The Hare now runs his swiftest, but he could not overtake the Tortoise in time. Slow and steady wins the race.",
+                "imageUrl": "generated_images/The Tortoise & the Hare/generated_image_part3.png"
+            }
+        ],
+        "quiz": [
+            {
+                "context": " \"A Hare is making fun of the Tortoise one day for being so slow.",
+                "question": "What is the Hare making of the Tortoise?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "Fucking fun"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Fun"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Fun time"
+                    },
+                    {
+                        "id": 4,
+                        "text": "So much fun"
+                    },
+                    {
+                        "id": 5,
+                        "text": "Good fun"
+                    }
+                ],
+                "correctAnswer": 2
+            },
+            {
+                "context": "The Tortoise keeps going slowly but steadily, and, after a time, passed the place where the Hare was sleeping.",
+                "question": "When does the Tortoise pass the place where the Hare was sleeping?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "Time"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Day"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Enough time"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Time time"
+                    }
+                ],
+                "correctAnswer": 1
+            },
+            {
+                "context": "Slow and steady wins the race.",
+                "question": "Slow and steady wins what?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "Race"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Ethnicity"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Only one race"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Specific race"
+                    }
+                ],
+                "correctAnswer": 1
             }
         ]
     }
