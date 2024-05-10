@@ -176,6 +176,13 @@ themeButton.addEventListener('click', () => {
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
+
+    // Update image sources based on the current theme
+    const image = document.getElementById('logo-image');
+    const currentTheme = getCurrentTheme();
+    const imagePath = currentTheme === 'dark' ? 'assets/img/clarithink-dark.png' : 'iassets/img/clarithink-light.png';
+    image.src = imagePath;
+
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())

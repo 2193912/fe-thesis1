@@ -32,6 +32,10 @@
   --font-medium: 500;
   --font-semi-bold: 600;
 
+/*========== Logo ==========*/
+  --logo-image-light: url('assets/img/clarithink-light.png');
+  --logo-image-dark: url('assets/img/clarithink-dark.png');
+
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -106,8 +110,8 @@ body.dark-theme {
   --title-color: hsl(230, 48%, 85%);
   --text-color: hsl(230, 30%, 81%);
   --border-color: #1b1f2e;
-  --body-color:#282E48;
-  --container-color: #353c5c;
+  --body-color:#202642;
+  --container-color: #3a415f;
 }
 
 /*========== 
@@ -141,6 +145,30 @@ body.dark-theme {
 
 .dark-theme::-webkit-scrollbar-thumb:hover {
   background-color: hsl(230, 16%, 35%);
+}
+
+/* Update image source for dark mode */
+.dark-theme .nav__logo {
+  content: var(--image-dark);
+}
+
+.dark-theme .footer__logo {
+  content: url(assets/img/clarithink-dark.png);
+}
+
+/* Set initial image source based on light mode */
+.logo-image {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: var(--image-light); /* Set initial source */
+}
+
+/* Update image source for dark mode */
+.dark-theme .logo-image {
+  content: var(--image-dark);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
