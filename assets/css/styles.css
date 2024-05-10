@@ -194,9 +194,12 @@ body.dark-theme {
   color: var(--first-color);
   font-weight: var(--font-medium);
 }
-.nav__logo i {
-  font-size: 3rem;
+.logo-img {
+  width: 150px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 45px;
 }
+
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1150px) {
