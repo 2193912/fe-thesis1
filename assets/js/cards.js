@@ -134,6 +134,22 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.style.display = 'none';
     }
 
+    // Event listener for the exit button
+    document.getElementById('exit-close').addEventListener('click', function() {
+        closeQuizModal(); // Close quiz modal
+
+        // Decrement currentQuestion and quizModal to go back to the previous question
+        currentQuestion = currentQuestion - 1;
+        quizModal = quizModal - 1;
+
+        // Reset quiz options
+        const options = document.querySelectorAll('.quiz-option');
+        options.forEach(option => {
+            option.disabled = false; // Enable quiz options
+        });
+    });
+
+    
     /*=============== DARK LIGHT THEME ===============*/ 
     const themeButton = document.getElementById('theme-button')
     const darkTheme = 'dark-theme'
