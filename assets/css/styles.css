@@ -335,7 +335,7 @@ body.dark-theme {
 
 .home__container {
   padding-top: 2rem;
-  row-gap: 2.5rem;
+  row-gap: 4.5rem;
 }
 
 .home__data {
@@ -357,7 +357,7 @@ body.dark-theme {
 
 .home__article, 
 .home__img {
-  width: 220px;
+  width: 500px;
   transition: scale .4s;
 }
 
@@ -397,7 +397,7 @@ body.dark-theme {
 }
 
 .featured__img {
-  width: 150px;
+  width: 450px;
   margin: 0 auto .75rem;
 }
 
@@ -472,7 +472,7 @@ body.dark-theme {
 }
 
 .testimonial__img {
-  width: 250px;
+  width: 200px;
   border-radius: 50%;
   margin: 0 auto 1.5rem;
 }
