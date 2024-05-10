@@ -106,6 +106,11 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('quiz-results').style.display = 'block';
         // Show Try Again button
         document.getElementById('back-to-first-page').style.display = 'block';
+        //Show Title on Slides
+        document.getElementById('storyTitle-name').style.display = 'block';
+
+        const title = document.getElementById('storyTitle-name');
+        title.innerText = ''
     
         // Remarks for the quiz taker
         const remarks = document.getElementById('quiz-result-greeting');
