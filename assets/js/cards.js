@@ -22,7 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function initializePage() {
         document.getElementById('storyTitle-image').src = storyData.titleImageUrl;
         document.getElementById('storyTitle-image').style.display = 'block';
-        document.getElementById('next-button').addEventListener('click', nextPage);
+        document.getElementById("nextBtn").addEventListener("click", nextPage);
+        document.getElementById("prevBtn").addEventListener("click", previousPage); // Add event listener for previous button
+        document.getElementById("nextBtn").addEventListener("click", nextPage); // Add event listener for next button
+
         showInstructions('Title: ' + storyData.titleText);
         updateProgressBar();
     }
@@ -76,6 +79,19 @@ document.addEventListener('DOMContentLoaded', function() {
             showInstructions('')
         }
     }
+
+    function previousPage() {
+        if (currentPage > 0) {
+            currentPage--; // Decrement currentPage before accessing story data
+            const story = storyData.summary[currentPage]; // Access previous story data
+            document.getElementById('story-text').innerText = story.text;
+            document.getElementById('story-image').src = story.imageUrl;
+            document.getElementById('story-image').style.display = 'block';
+            updateProgressBar(); // Update progress bar
+            showInstructions('');
+        }
+    }
+    
 
     function showResults() {
         showInstructions('CONGRATULATIONS, YOU GOT');

@@ -59,11 +59,23 @@
     font-size:xx-large;
 }
 
-#story-button {
-    padding: 10px 20px;
-    margin-top: 20px;
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 50px;
+    color: rgba(134, 61, 5, 0.961);
     cursor: pointer;
-}
+  }
+  
+  #prevBtn {
+    left: 30px;
+  }
+  
+  #nextBtn {
+    right: 10px;
+  }
 
 button:hover {
     background-color: #0056b3;
