@@ -81,17 +81,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function previousPage() {
+        // Hide the story title image
+        document.getElementById('storyTitle-image').style.display = 'none';
+    
+        // Decrement the currentPage to go to the previous page
         if (currentPage > 0) {
-            currentPage--; // Decrement currentPage before accessing story data
-            const story = storyData.summary[currentPage]; // Access previous story data
+            currentPage--;
+    
+            // If the current page is a quiz modal, close it and decrement quizModal
+            if (currentPage === quizModal) {
+                closeQuizModal();
+                quizModal--;
+            }
+    
+            // Access the story data for the previous page
+            const story = storyData.summary[currentPage];
             document.getElementById('story-text').innerText = story.text;
             document.getElementById('story-image').src = story.imageUrl;
             document.getElementById('story-image').style.display = 'block';
-            updateProgressBar(); // Update progress bar
+    
+            // Update progress bar and instructions
+            updateProgressBar();
             showInstructions('');
         }
-    }
-    
+    }     
 
     function showResults() {
         showInstructions('CONGRATULATIONS, YOU GOT');
