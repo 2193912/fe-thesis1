@@ -106,6 +106,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('quiz-results').style.display = 'block';
         // Show Try Again button
         document.getElementById('back-to-first-page').style.display = 'block';
+        // Show Read More Button
+        document.getElementById('read-more').style.display = 'block';
         //Show Title on Slides
         document.getElementById('storyTitle-name').style.display = 'block';
 
@@ -131,9 +133,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    
-    
-
     function showInstructions(message) {
         const instructions = document.getElementById('instructions');
         instructions.innerHTML = `<p>${message}</p>`;

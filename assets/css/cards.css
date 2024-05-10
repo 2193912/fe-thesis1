@@ -99,6 +99,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 #back-to-first-page i {
@@ -107,37 +108,45 @@
 
 #back-to-first-page {
     position: absolute;
-    bottom: 20px;
+    bottom: 110px; /* Adjusted position */
     left: 20px;
+}
+
+#back-to-first-page:hover {
+    background-color: #0056b3;
+}
+
+/* Read More Button */
+#read-more {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
 }
 
-#back-to-home {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#back-to-first-page i,
-#back-to-home i {
+#read-more i {
     margin-right: 5px;
 }
 
-#back-to-first-page:hover,
-#back-to-home:hover {
+#read-more {
+    position: absolute;
+    bottom: 110px;
+    right: 20px; /* Adjusted to position it on the right side */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#read-more:hover {
     background-color: #0056b3;
 }
 
