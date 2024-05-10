@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
         displayQuiz(currentQuestion);
     }
 
+
     function displayQuiz() {
         if (currentQuestion < storyData.quiz.length) {
             const quiz = storyData.quiz[currentQuestion];
@@ -125,6 +126,12 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             currentQuestion++;
         }
+    }
+
+    // Function to close quiz modal
+    function closeQuizModal() {
+        const modal = document.getElementById('quiz-modal');
+        modal.style.display = 'none';
     }
 
     /*=============== DARK LIGHT THEME ===============*/ 
@@ -157,5 +164,15 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('selected-icon', getCurrentIcon())
     })
 
-    
+    // Script to set the title based on the query parameter
+    function getQueryParam(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    // Get the title from the query parameter
+    const title = getQueryParam("title");
+
+    // Set the title in the document
+    document.getElementById("storyTitle-name").innerText = title;
 });
