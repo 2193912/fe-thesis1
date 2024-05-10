@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
     function initializePage() {
-        document.getElementById('storyTitle-image').src = storyData.titleImageUrl;
-        document.getElementById('storyTitle-image').style.display = 'block';
+        // document.getElementById('storyTitle-image').src = storyData.titleImageUrl;
+        // document.getElementById('storyTitle-image').style.display = 'block';
         document.getElementById("nextBtn").addEventListener("click", nextPage);
         document.getElementById("prevBtn").addEventListener("click", previousPage); // Add event listener for previous button
         document.getElementById("nextBtn").addEventListener("click", nextPage); // Add event listener for next button
 
-        showInstructions('Title: ' + storyData.titleText);
+        // showInstructions('Title: ' + storyData.titleText);
         updateProgressBar();
     }
 
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function nextPage() {
-        document.getElementById('storyTitle-image').style.display = 'none';
+        // document.getElementById('storyTitle-image').style.display = 'none';
         if (currentPage === quizModal) {
             showQuizModal();
             quizModal++;
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function previousPage() {
         // Hide the story title image
-        document.getElementById('storyTitle-image').style.display = 'none';
+        // document.getElementById('storyTitle-image').style.display = 'none';
     
         // Decrement the currentPage to go to the previous page
         if (currentPage > 0) {
