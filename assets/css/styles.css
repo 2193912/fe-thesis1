@@ -493,11 +493,11 @@ body.dark-theme {
 
 /*=============== FOOTER ===============*/
 .footer {
-  padding-block: 4rem 6rem;
+  padding-block: 7rem 10rem;
 }
 
 .footer__container {
-  row-gap: 3rem;
+  row-gap: 5rem;
 }
 
 .footer__logo {
@@ -507,11 +507,11 @@ body.dark-theme {
   color: var(--first-color);
   font-size: var(--h3-font-size);
   font-family: var(--second-font);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .footer__logo i {
-  font-size: 1.25rem;
+  font-size: 5rem;
 }
 
 .footer__data {
