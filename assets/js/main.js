@@ -203,4 +203,6 @@ function openBook(title) {
   localStorage.setItem('selectedTitle', title);
   // Open book.html
   window.location.href = 'book.html';
+  // Redirect to book.html with the title as a query parameter
+  window.location.href = "book.html?title=" + encodeURIComponent(title);
 }
