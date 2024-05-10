@@ -1,11 +1,11 @@
 .text-container {
     position:relative;
     top: 90px;
-    width: 80%;
+    width: 95%;
     height: auto;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #FAF9F6;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #ebebda;
     box-shadow: 0 0 40px rgba(0,0,0,0.1);
     border: 2px solid var(--border-color);
     transition: border .4s, background-color .4s;
@@ -42,7 +42,8 @@
 }
 
 #storyTitle-name {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size:xx-large;
 }
 
 #story-button {
@@ -106,15 +107,15 @@ li {
 }
 
 #story-text {
-    font-size: 18px;
-    color: hsl(230, 16%, 45%);
+    font-size: 25px;
+    color: hsl(229, 21%, 60%);
 }
 
 
 #story-image {
     max-width: 100%;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     display: block;
     margin: 20px auto; /* Center align images */
     border-radius: 10px; /* Add a slight border radius */
@@ -124,12 +125,14 @@ li {
 
 #storyTitle-name {
     font: Poppins;
+    color: hsl(229, 21%, 60%);
+    font-size: 40px;
 }
 
 #storyTitle-image {
     max-width: 100%;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     display: block;
     margin: 20px auto; /* Center align images */
     border-radius: 10px; /* Add a slight border radius */
@@ -140,6 +143,7 @@ li {
 #story-text {
     text-align: center;
     text-justify: none;
+    margin: 10px;
 }
 
 
