@@ -40,6 +40,71 @@
     color: orangered;
 }
 
+/* Quiz Results Section */
+#quiz-results {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#quiz-results h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#quiz-results p {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #b0a4a4;
+}
+
+/* Quiz Scoring Section */
+#quiz-scoring {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#quiz-scoring p {
+    font-size: 85px;
+    color: #F46051;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Quiz Greeting Section */
+#quiz-result-greeting {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#quiz-result-greeting h3 {
+    font-size: 40px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#quiz-result-greeting p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Try Again Button */
+#back-to-first-page {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-to-first-page i {
+    margin-right: 5px;
+}
+
 #quiz-result-text {
     text-align: center;
     position: relative;
