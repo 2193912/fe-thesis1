@@ -70,7 +70,7 @@
   }
   
   #prevBtn {
-    left: 30px;
+    left: 10px;
   }
   
   #nextBtn {
@@ -113,7 +113,7 @@ li {
     width: 70%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
+/*=============== SCROLL UP 
 .close {
     color: #aaa;
     float: right;
@@ -123,12 +123,19 @@ li {
     font-size: 35px;
     font-weight: bold;
 }
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
+===============*/
+.close {
+    position:relative;
+    font-size: 35px;
     cursor: pointer;
+}
+
+.close i {
+    color: #b0a4a4;
+}
+
+.close:hover i {
+    color: rgb(1, 0, 0);
 }
 
 #story-text {
