@@ -396,6 +396,12 @@ li {
     color: green;
 }
 
+#result-answer {
+    text-align: center;
+    font-size: 22px;
+    color: rgba(0, 128, 0, 0.4);
+}
+
 #continue-button:hover {
     background-color: #aaa;
 }

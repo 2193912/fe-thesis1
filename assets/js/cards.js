@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let score = 0;
     let progressBarWidth = 0;
     let quizModal = 1;
+    let quizArray = 0;
 
     // Retrieve the selected title from localStorage
     const selectedTitle = localStorage.getItem('selectedTitle');
@@ -27,9 +28,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function checkAnswer(selectedId) {
+        
         const correctId = storyData.quiz[currentQuestion - 1].correctAnswer;
         const resultText = (selectedId === correctId) ? 'Correct!' : 'Incorrect!';
+        const answerText = getAnswerText(quizArray,correctId);
         document.getElementById('result').innerText = resultText;
+        if(selectedId !== correctId){
+            document.getElementById('result').style.color = "red";
+            document.getElementById('result-answer').style.display = 'block';
+            document.getElementById('result-answer').innerText = 'Correct Answer: '+answerText;
+            
+        }else{
+            document.getElementById('result').style.color = "green";
+        }
 
         // Disable all options in the mcq after user clicks a choice
         const options = document.querySelectorAll('.quiz-option');
@@ -48,6 +59,24 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentQuestion == storyData.quiz.length) {
             showResults();
         }
+        quizArray++
+    }
+
+    function getAnswerText(quizIndex, correctId) {
+        // Ensure quizIndex is within bounds
+        if (quizIndex < 0 || quizIndex >= storyData.quiz.length) {
+            console.error('Invalid quiz index.');
+            return '';
+        }
+    
+        // Get the quiz at the specified index
+        const quiz = storyData.quiz[quizIndex];
+    
+        // Find the option that matches the correctId
+        const option = quiz.options.find(option => option.id === correctId);
+    
+        // Return the text of the found option, or an empty string if not found
+        return option ? option.text : '';
     }
 
     document.getElementById('continue-button').addEventListener('click', function() {
@@ -55,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         nextPage();
         document.getElementById('continue-button').style.display = 'none';
         document.getElementById('result').style.display = 'none';
+        document.getElementById('result-answer').style.display = 'none';
     });
 
     function nextPage() {
