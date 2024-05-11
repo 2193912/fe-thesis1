@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Global variables
+    const audioButton = new Audio('assets/audio/clickButton.mp3');;
     let currentPage = 0;
     let currentQuestion = 0;
     let score = 0;
@@ -7,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let quizModal = 1;
     let quizArray = 0;
     let quizProgress = 0;
+    let audioResult = null;
 
     // Retrieve the selected title from localStorage
     const selectedTitle = localStorage.getItem('selectedTitle');
@@ -22,24 +24,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
     function initializePage() {
-        document.getElementById("nextBtn").addEventListener("click", nextPage);
-        document.getElementById("prevBtn").addEventListener("click", previousPage); // Add event listener for previous button
+        document.getElementById("nextBtn").addEventListener("click", function(){
+        nextPage();
+        audioButton.play();
+        });
+        document.getElementById("prevBtn").addEventListener("click", function(){
+        previousPage();
+        audioButton.play();
+        }); // Add event listener for previous button
 
         updateProgressBar();
     }
 
     function checkAnswer(selectedId) {
-        
+        const audioWrong = new Audio('assets/audio/wrong.mp3');
+        const audioCorrect = new Audio('assets/audio/Correct.mp3');
         const correctId = storyData.quiz[currentQuestion - 1].correctAnswer;
         const resultText = (selectedId === correctId) ? 'Correct!' : 'Incorrect!';
         const answerText = getAnswerText(quizArray,correctId);
         document.getElementById('result').innerText = resultText;
         if(selectedId !== correctId){
+            audioWrong.play();
             document.getElementById('result').style.color = "red";
             document.getElementById('result-answer').style.display = 'block';
             document.getElementById('result-answer').innerText = 'Correct Answer: '+answerText;
-            
         }else{
+            audioCorrect.play();
             document.getElementById('result').style.color = "green";
         }
 
@@ -81,8 +91,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementById('continue-button').addEventListener('click', function() {
-        closeQuizModal(); // Close quiz modal
+        // Close quiz modal
+        audioButton.play();
         nextPage();
+        closeQuizModal();
         document.getElementById('continue-button').style.display = 'none';
         document.getElementById('result').style.display = 'none';
         document.getElementById('result-answer').style.display = 'none';
@@ -108,7 +120,9 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             // Show quiz results after the last slide of the story
             showResults();
+            audioResult.play();
         }
+        
     }
 
     function previousPage() {
@@ -161,8 +175,13 @@ document.addEventListener('DOMContentLoaded', function() {
         quizResults.innerHTML = ''; // Clear previous content
         if (score == storyData.quiz.length) {
             quizResults.innerHTML += `<p>Congratulations! You got a perfect score!</p>`;
-        } else {
+            audioResult = new Audio('assets/audio/perfect.mp3');
+        }else if (score >= storyData.quiz.length/2){
+            quizResults.innerHTML += `<p>Nice! You have passed!</p>`;
+            audioResult = new Audio('assets/audio/passing.mp3');
+        }else {
             quizResults.innerHTML += `<p>Keep practicing to improve your score!</p>`;
+            audioResult = new Audio('assets/audio/failing.mp3');
         }
     }
     
