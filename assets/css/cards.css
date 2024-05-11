@@ -108,7 +108,7 @@
 
 #back-to-first-page {
     position: absolute;
-    bottom: 110px; /* Adjusted position */
+    bottom: -70px; /* Adjusted position */
     left: 20px;
 }
 
@@ -131,11 +131,16 @@
 
 #read-more i {
     margin-right: 5px;
+    color: #fff;
+}
+
+#read-more a {
+    color: #fff;
 }
 
 #read-more {
     position: absolute;
-    bottom: 110px;
+    bottom: -70px;
     right: 20px; /* Adjusted to position it on the right side */
     background-color: #007bff;
     color: #fff;
