@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let progressBarWidth = 0;
     let quizModal = 1;
     let quizArray = 0;
+    let quizProgress = 0;
 
     // Retrieve the selected title from localStorage
     const selectedTitle = localStorage.getItem('selectedTitle');
@@ -85,6 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('continue-button').style.display = 'none';
         document.getElementById('result').style.display = 'none';
         document.getElementById('result-answer').style.display = 'none';
+        quizProgress++;
+        updateProgressBar();
     });
 
     function nextPage() {
@@ -169,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateProgressBar() {
-        progressBarWidth = ((currentPage) / (storyData.summary.length)) * 100;
+        progressBarWidth = ((quizProgress) / (storyData.summary.length)) * 100;
         document.getElementById('progress-bar-inner').style.width = progressBarWidth + '%';
     }
 
