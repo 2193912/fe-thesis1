@@ -33,6 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
         // Display the fetched title
         displayTitle(selectedTitle);
+
+        // Add event listener to "Try Again?" button
+        document.getElementById("back-to-first-page").addEventListener("click", function() {
+            location.reload();
+        });
+
     }
     
     function displayTitle(selectedTitle) {
