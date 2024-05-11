@@ -17,13 +17,33 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             storyData = data[selectedTitle]; // Use the selected title
             initializePage();
-        });
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+    });
 
     function initializePage() {
         document.getElementById("nextBtn").addEventListener("click", nextPage);
         document.getElementById("prevBtn").addEventListener("click", previousPage); // Add event listener for previous button
-
+    
         updateProgressBar();
+    
+        // Retrieve the selected title from localStorage
+        const selectedTitle = localStorage.getItem('selectedTitle');
+    
+        // Display the fetched title
+        displayTitle(selectedTitle);
+    }
+    
+    function displayTitle(selectedTitle) {
+        // Get the story title element
+        const titleElement = document.getElementById('storyTitle-name');
+    
+        // Display the title element
+        titleElement.style.display = 'block';
+    
+        // Update the title text
+        titleElement.innerText = selectedTitle;
     }
 
     function checkAnswer(selectedId) {
