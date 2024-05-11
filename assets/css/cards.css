@@ -395,6 +395,13 @@ li {
     font-weight: bold;
 }
 
+#context {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333; /* Adjust color as needed */
+}
+
 #result {
     text-align: center;
     font-size: 18px;

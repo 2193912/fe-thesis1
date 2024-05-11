@@ -55,39 +55,43 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function checkAnswer(selectedId) {
-        
         const correctId = storyData.quiz[currentQuestion - 1].correctAnswer;
         const resultText = (selectedId === correctId) ? 'Correct!' : 'Incorrect!';
-        const answerText = getAnswerText(quizArray,correctId);
+        const answerText = getAnswerText(quizArray, correctId);
+        
         document.getElementById('result').innerText = resultText;
-        if(selectedId !== correctId){
+        
+        // Display context text
+        const contextText = storyData.quiz[currentQuestion - 1].context;
+        document.getElementById('result-answer').innerText = 'Correct Answer: ' + answerText;
+        document.getElementById('context').innerText = contextText;
+    
+        if (selectedId !== correctId) {
             document.getElementById('result').style.color = "red";
             document.getElementById('result-answer').style.display = 'block';
-            document.getElementById('result-answer').innerText = 'Correct Answer: '+answerText;
-            
-        }else{
+        } else {
             document.getElementById('result').style.color = "green";
         }
-
+    
         // Disable all options in the mcq after user clicks a choice
         const options = document.querySelectorAll('.quiz-option');
         options.forEach(option => {
             option.disabled = true;
         });
-
+    
         // Show continue button and result
         document.getElementById('result').style.display = 'block';
         document.getElementById('continue-button').style.display = 'block';
-
+    
         if (selectedId === correctId) {
             score++;
         }
-
+    
         if (currentQuestion == storyData.quiz.length) {
             showResults();
         }
         quizArray++
-    }
+    }    
 
     function getAnswerText(quizIndex, correctId) {
         // Ensure quizIndex is within bounds
@@ -117,12 +121,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function nextPage() {
+        // Clear previous context text
+        document.getElementById('context').innerText = '';
+    
         if (currentPage === quizModal) {
             showQuizModal();
             quizModal++;
             return; // wait for quiz submission
         }
-
+    
         if (currentPage < storyData.summary.length) {
             const story = storyData.summary[currentPage];
             document.getElementById('story-text').innerText = story.text;
