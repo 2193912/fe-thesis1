@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Retrieve the selected title from localStorage
     const selectedTitle = localStorage.getItem('selectedTitle');
+    const selectedTitleImage = localStorage.getItem('selectedTitleImage');
 
     // Data.json store variable
     let storyData;
@@ -27,13 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Updated initializePage function to call displayTitle and display the fetched title
     function initializePage() {
+        document.getElementById('storyTitle-image').src = selectedTitleImage;
+        document.getElementById('storyTitle-image').style.display = 'block';
         document.getElementById("nextBtn").addEventListener("click", nextPage); // Add event listener for next button
         document.getElementById("prevBtn").addEventListener("click", previousPage); // Add event listener for previous button
 
         updateProgressBar();
-
-        // Retrieve the selected title from localStorage
-        const selectedTitle = localStorage.getItem('selectedTitle');
 
         // Display the fetched title
         displayTitle(selectedTitle);
@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function nextPage() {
+        document.getElementById('storyTitle-image').style.display = 'none';
         if (currentPage === quizModal) {
             showQuizModal();
             quizModal++;
