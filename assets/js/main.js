@@ -7,22 +7,26 @@ let uploadedContent = '';
 
 // Function to handle form submission
 document.querySelector('.upload__form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission behavior
-    
-    // Get title and content values from input fields
-    uploadedTitle = document.getElementById('upload-title').value;
-    uploadedContent = document.getElementById('upload-content').value;
-    
-    // You can perform further actions here, such as sending the data to a server, etc.
-    
-    // Reset input fields
-    document.getElementById('upload-title').value = '';
-    document.getElementById('upload-content').value = '';
+  event.preventDefault(); // Prevent default form submission behavior
+  
+  // Get title and content values from input fields
+  uploadedTitle = document.getElementById('upload-title').value;
+  uploadedContent = document.getElementById('upload-content').value;
+  
+  // You can perform further actions here, such as sending the data to a server, etc.
+  
+  // Reset input fields
+  document.getElementById('upload-title').value = '';
+  document.getElementById('upload-content').value = '';
 
-    // Close upload form
-    document.getElementById('upload-content').classList.remove('show-upload');
+  // Close upload form
+  document.getElementById('upload-content').classList.remove('show-upload');
+
+  // Show alert message for successful submission
+  alert("You have submitted a content.");
 });
 
+// Function to count words in the upload content
 // Function to count words in the upload content
 function countWords(self) {
   var spaces = self.value.match(/\S+/g);
@@ -37,10 +41,12 @@ function countWords(self) {
       uploadCounter.style.color = 'red';
       countElement.style.color = 'red';
       uploadButton.disabled = true;
+      uploadButton.style.backgroundColor = 'gray'; // Change button color to gray
   } else {
       uploadCounter.style.color = '';
       countElement.style.color = ''; // Reset color if it's within the limit
       uploadButton.disabled = false;
+      uploadButton.style.backgroundColor = ''; // Reset button color
   }
 }
 
