@@ -9,11 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let quizArray = 0;
     let quizProgress = 0;
     let contextText = '';
-<<<<<<< HEAD
     let answeredQuestions = []; // Global variable to track answered questions
-=======
     let audioResult = null;
->>>>>>> latest-branch
 
     // Retrieve the selected title from localStorage
     const selectedTitle = localStorage.getItem('selectedTitle');
@@ -72,17 +69,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
    // Modified checkAnswer function to store the context text
     function checkAnswer(selectedId) {
-<<<<<<< HEAD
         // Check if the current question has already been answered
         if (answeredQuestions.includes(currentQuestion - 1)) {
             // If it's already answered, do nothing
             return;
         }
 
-=======
         const audioWrong = new Audio('assets/audio/wrong.mp3');
         const audioCorrect = new Audio('assets/audio/Correct.mp3');
->>>>>>> latest-branch
         const correctId = storyData.quiz[currentQuestion - 1].correctAnswer;
         const resultText = (selectedId === correctId) ? 'Correct!' : 'Incorrect!';
         const answerText = getAnswerText(quizArray, correctId);
