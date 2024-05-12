@@ -1,4 +1,29 @@
 /*=============== UPLOAD ===============*/
+// Variable to store uploaded title
+let uploadedTitle = '';
+
+// Variable to store uploaded content
+let uploadedContent = '';
+
+// Function to handle form submission
+document.querySelector('.upload__form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission behavior
+    
+    // Get title and content values from input fields
+    uploadedTitle = document.getElementById('upload-title').value;
+    uploadedContent = document.getElementById('upload-content').value;
+    
+    // You can perform further actions here, such as sending the data to a server, etc.
+    
+    // Reset input fields
+    document.getElementById('upload-title').value = '';
+    document.getElementById('upload-content').value = '';
+
+    // Close upload form
+    document.getElementById('upload-content').classList.remove('show-upload');
+});
+
+// Function to count words in the upload content
 function countWords(self) {
   var spaces = self.value.match(/\S+/g);
   var words = spaces ? spaces.length : 0;
