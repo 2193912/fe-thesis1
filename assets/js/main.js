@@ -1,4 +1,24 @@
 /*=============== UPLOAD ===============*/
+function countWords(self) {
+  var spaces = self.value.match(/\S+/g);
+  var words = spaces ? spaces.length : 0;
+  var uploadCounter = document.querySelector(".upload__counter");
+  var countElement = document.getElementById("count__words");
+  var uploadButton = document.querySelector(".upload__button");
+
+  countElement.innerHTML = words + "/500";
+
+  if (words > 500) { 
+      uploadCounter.style.color = 'red';
+      countElement.style.color = 'red';
+      uploadButton.disabled = true;
+  } else {
+      uploadCounter.style.color = '';
+      countElement.style.color = ''; // Reset color if it's within the limit
+      uploadButton.disabled = false;
+  }
+}
+
 const uploadNav = document.getElementById('upload-nav'),
       uploadClose = document.getElementById('upload-close'),
       uploadContent = document.getElementById('upload-content')
