@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let quizModal = 1;
     let quizArray = 0;
     let quizProgress = 0;
+    let contextText = '';
 
     // Retrieve the selected title from localStorage
     const selectedTitle = localStorage.getItem('selectedTitle');
@@ -24,74 +25,77 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Error fetching data:', error);
     });
 
+    // Updated initializePage function to call displayTitle and display the fetched title
     function initializePage() {
         document.getElementById("nextBtn").addEventListener("click", nextPage);
         document.getElementById("prevBtn").addEventListener("click", previousPage); // Add event listener for previous button
-    
+
         updateProgressBar();
-    
+
         // Retrieve the selected title from localStorage
         const selectedTitle = localStorage.getItem('selectedTitle');
-    
+
         // Display the fetched title
         displayTitle(selectedTitle);
 
         // Add event listener to "Try Again?" button
-        document.getElementById("back-to-first-page").addEventListener("click", function() {
+        document.getElementById("back-to-first-page").addEventListener("click", function () {
             location.reload();
         });
 
     }
     
+    // Added displayTitle function to display the fetched title
     function displayTitle(selectedTitle) {
         // Get the story title element
         const titleElement = document.getElementById('storyTitle-name');
-    
+
         // Display the title element
         titleElement.style.display = 'block';
-    
+
         // Update the title text
         titleElement.innerText = selectedTitle;
     }
 
+   // Modified checkAnswer function to store the context text
     function checkAnswer(selectedId) {
         const correctId = storyData.quiz[currentQuestion - 1].correctAnswer;
         const resultText = (selectedId === correctId) ? 'Correct!' : 'Incorrect!';
         const answerText = getAnswerText(quizArray, correctId);
-        
         document.getElementById('result').innerText = resultText;
-        
-        // Display context text
-        const contextText = storyData.quiz[currentQuestion - 1].context;
-        document.getElementById('result-answer').innerText = 'Correct Answer: ' + answerText;
-        document.getElementById('context').innerText = contextText;
-    
         if (selectedId !== correctId) {
             document.getElementById('result').style.color = "red";
             document.getElementById('result-answer').style.display = 'block';
+            document.getElementById('result-answer').innerText = 'Correct Answer: ' + answerText;
         } else {
             document.getElementById('result').style.color = "green";
         }
-    
+
+        // Store the context text
+        contextText = storyData.quiz[currentQuestion - 1].context;
+
+        // Display the context
+        document.getElementById('context').innerText = contextText; // Display context
+
         // Disable all options in the mcq after user clicks a choice
         const options = document.querySelectorAll('.quiz-option');
         options.forEach(option => {
             option.disabled = true;
         });
-    
+
         // Show continue button and result
         document.getElementById('result').style.display = 'block';
         document.getElementById('continue-button').style.display = 'block';
-    
+
         if (selectedId === correctId) {
             score++;
         }
-    
+
         if (currentQuestion == storyData.quiz.length) {
             showResults();
         }
         quizArray++
-    }    
+    }
 
     function getAnswerText(quizIndex, correctId) {
         // Ensure quizIndex is within bounds
@@ -115,21 +119,19 @@ document.addEventListener('DOMContentLoaded', function() {
         nextPage();
         document.getElementById('continue-button').style.display = 'none';
         document.getElementById('result').style.display = 'none';
+        contextText = '';
         document.getElementById('result-answer').style.display = 'none';
         quizProgress++;
         updateProgressBar();
     });
 
     function nextPage() {
-        // Clear previous context text
-        document.getElementById('context').innerText = '';
-    
         if (currentPage === quizModal) {
             showQuizModal();
             quizModal++;
             return; // wait for quiz submission
         }
-    
+
         if (currentPage < storyData.summary.length) {
             const story = storyData.summary[currentPage];
             document.getElementById('story-text').innerText = story.text;
@@ -163,6 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // Updated showResults function to display the title on slides
     function showResults() {
         // Hide story content
         document.getElementById('story-container').style.display = 'none';
@@ -174,21 +177,21 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('back-to-first-page').style.display = 'block';
         // Show Read More Button
         document.getElementById('read-more').style.display = 'block';
-        //Show Title on Slides
+        // Show Title on Slides
         document.getElementById('storyTitle-name').style.display = 'block';
 
         const title = document.getElementById('storyTitle-name');
-        title.innerText = ''
-    
+        title.innerText = '' // Set the title text here if needed
+
         // Remarks for the quiz taker
         const remarks = document.getElementById('quiz-result-greeting');
         remarks.style.display = 'block'; // Show the quiz greeting
         remarks.innerHTML = `<h3>Quiz Results</h3>`;
-    
+
         // Populate quiz scoring content
         const scoring = document.getElementById('quiz-scoring');
         scoring.innerHTML = `<p>You scored ${score}/${storyData.quiz.length}!</p>`;
-    
+
         // Populate quiz result content
         const quizResults = document.getElementById('quiz-results');
         quizResults.innerHTML = ''; // Clear previous content
@@ -213,6 +216,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const modal = document.getElementById('quiz-modal');
         modal.style.display = 'block';
         displayQuiz(currentQuestion);
+    
+        // Display the stored context text
+        document.getElementById('context').innerText = contextText;
     }
 
     function displayQuiz() {
@@ -231,6 +237,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 li.appendChild(button);
                 ul.appendChild(li);
             });
+    
+            // Clear previous context text
+            document.getElementById('context').innerText = '';
+    
             currentQuestion++;
         }
     }
