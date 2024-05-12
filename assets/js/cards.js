@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function initializePage() {
         document.getElementById('storyTitle-image').src = selectedTitleImage;
         document.getElementById('storyTitle-image').style.display = 'block';
+        // document.getElementById("nextBtn").addEventListener("click", nextPage);
+        // document.getElementById("prevBtn").addEventListener("click", previousPage); // Add event listener for previous button
         document.getElementById("nextBtn").addEventListener("click", function(){
             nextPage();
             audioButton.play();
@@ -127,8 +129,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('continue-button').addEventListener('click', function() {
         audioButton.play();
+        closeQuizModal(); // Close quiz modal
         nextPage();
-        closeQuizModal();// Close quiz modal
+        // Close quiz modal
+        // closeQuizModal();
         document.getElementById('continue-button').style.display = 'none';
         document.getElementById('result').style.display = 'none';
         contextText = '';
@@ -213,12 +217,16 @@ document.addEventListener('DOMContentLoaded', function() {
         if (score == storyData.quiz.length) {
             quizResults.innerHTML += `<p>Congratulations! You got a perfect score!</p>`;
             audioResult = new Audio('assets/audio/perfect.mp3');
-        }else if (score >= storyData.quiz.length/2){
-            quizResults.innerHTML += `<p>Nice! You have passed!</p>`;
-            audioResult = new Audio('assets/audio/passing.mp3');
-        }else {
+        } else {
+        //     audioResult = new Audio('assets/audio/perfect.mp3');
+        // }else if (score >= storyData.quiz.length/2){
+        //     quizResults.innerHTML += `<p>Nice! You have passed!</p>`;
+        //     audioResult = new Audio('assets/audio/passing.mp3');
+        // }else {
             quizResults.innerHTML += `<p>Keep practicing to improve your score!</p>`;
-            audioResult = new Audio('assets/audio/failing.mp3');
+        //     audioResult = new Audio('assets/audio/failing.mp3');
+        // }
+        }
     }
     
     function showInstructions(message) {
