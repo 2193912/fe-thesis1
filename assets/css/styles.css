@@ -488,7 +488,7 @@ body.dark-theme {
   width: initial;
   height: initial;
   background-color: var(--container-color);
-  border: 2px solid var(--border-color);
+  border: 1px solid var(--border-color);
   padding: .5rem;
   font-size: 1.5rem;
   color: var(--first-color);
