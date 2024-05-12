@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Updated initializePage function to call displayTitle and display the fetched title
     function initializePage() {
+        document.getElementById('storyTitle-image').src = storyData.title.titleImageUrl;
+        document.getElementById('storyTitle-image').style.display = 'block';
         document.getElementById("nextBtn").addEventListener("click", nextPage);
         document.getElementById("prevBtn").addEventListener("click", previousPage); // Add event listener for previous button
 
@@ -113,6 +115,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Return the text of the found option, or an empty string if not found
         return option ? option.text : '';
     }
+
+   
 
     document.getElementById('continue-button').addEventListener('click', function() {
         closeQuizModal(); // Close quiz modal
