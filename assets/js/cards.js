@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Updated initializePage function to call displayTitle and display the fetched title
     function initializePage() {
-        document.getElementById("nextBtn").addEventListener("click", nextPage);
+        document.getElementById("nextBtn").addEventListener("click", nextPage); // Add event listener for next button
         document.getElementById("prevBtn").addEventListener("click", previousPage); // Add event listener for previous button
 
         updateProgressBar();
