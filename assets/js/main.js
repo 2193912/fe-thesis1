@@ -198,9 +198,10 @@ sr.reveal(`.discount__data`, {origin: 'left'})
 sr.reveal(`.discount__images`, {origin: 'right'})
 
 
-function openBook(title) {
+function openBook(title,titleImage) {
   // Store the selected title in localStorage to pass it to book.html
   localStorage.setItem('selectedTitle', title);
+  localStorage.setItem('selectedTitleImage', titleImage);
   // Open book.html
   window.location.href = 'book.html';
   // Redirect to book.html with the title as a query parameter
