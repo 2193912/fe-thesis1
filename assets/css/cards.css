@@ -193,6 +193,14 @@
     right: 10px;
   }
 
+  /* Add hover effect */
+.nav-btn:hover {
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.8); /* Adjust the color and size of the glow as needed */
+    transform: scale(1.1); /* Optional: Increase size on hover */
+    border-radius: 50%; /* Make it a circle */
+  }
+
+
 button:hover {
     background-color: #0056b3;
 }
