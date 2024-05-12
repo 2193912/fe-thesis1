@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let quizArray = 0;
     let quizProgress = 0;
     let contextText = '';
+    let answeredQuestions = []; // Global variable to track answered questions
 
     // Retrieve the selected title from localStorage
     const selectedTitle = localStorage.getItem('selectedTitle');
@@ -59,6 +60,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
    // Modified checkAnswer function to store the context text
     function checkAnswer(selectedId) {
+        // Check if the current question has already been answered
+        if (answeredQuestions.includes(currentQuestion - 1)) {
+            // If it's already answered, do nothing
+            return;
+        }
+
         const correctId = storyData.quiz[currentQuestion - 1].correctAnswer;
         const resultText = (selectedId === correctId) ? 'Correct!' : 'Incorrect!';
         const answerText = getAnswerText(quizArray, correctId);
@@ -82,6 +89,9 @@ document.addEventListener('DOMContentLoaded', function() {
         options.forEach(option => {
             option.disabled = true;
         });
+
+        // Store the index of the answered question
+        answeredQuestions.push(currentQuestion - 1);
 
         // Show continue button and result
         document.getElementById('result').style.display = 'block';
