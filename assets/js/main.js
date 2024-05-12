@@ -3,7 +3,7 @@
 let uploadedTitle = '';
 
 // Variable to store uploaded content
-let uploadedContent = '';
+let uploadedContentValue = '';
 
 // Function to handle form submission
 document.querySelector('.upload__form').addEventListener('submit', function(event) {
@@ -11,22 +11,21 @@ document.querySelector('.upload__form').addEventListener('submit', function(even
   
   // Get title and content values from input fields
   uploadedTitle = document.getElementById('upload-title').value;
-  uploadedContent = document.getElementById('upload-content').value;
+  uploadedContentValue = document.getElementById('upload-textarea').value; // Corrected textarea id
   
   // You can perform further actions here, such as sending the data to a server, etc.
   
   // Reset input fields
   document.getElementById('upload-title').value = '';
-  document.getElementById('upload-content').value = '';
+  document.getElementById('upload-textarea').value = ''; // Corrected textarea id
 
   // Close upload form
   document.getElementById('upload-content').classList.remove('show-upload');
 
   // Show alert message for successful submission
-  alert("You have submitted a content.");
+  alert("Uploaded Title: " + uploadedTitle + "\nUploaded Content: " + uploadedContentValue); // Use the variable to show content
 });
 
-// Function to count words in the upload content
 // Function to count words in the upload content
 function countWords(self) {
   var spaces = self.value.match(/\S+/g);
