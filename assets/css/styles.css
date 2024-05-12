@@ -200,8 +200,8 @@ body.dark-theme {
   font-weight: var(--font-medium);
 }
 .logo-img {
-  width: 100px;
-  top: 5px; /* Set the desired width */
+  width: 100px; /* Set the desired width */
+  top: 5px; 
   height: auto; /* Maintain aspect ratio */
   margin-left: 45px;
 }

@@ -27,9 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Updated initializePage function to call displayTitle and display the fetched title
     function initializePage() {
+<<<<<<< HEAD
         document.getElementById('storyTitle-image').src = storyData.title.titleImageUrl;
         document.getElementById('storyTitle-image').style.display = 'block';
         document.getElementById("nextBtn").addEventListener("click", nextPage);
+=======
+        document.getElementById("nextBtn").addEventListener("click", nextPage); // Add event listener for next button
+>>>>>>> latest-branch
         document.getElementById("prevBtn").addEventListener("click", previousPage); // Add event listener for previous button
 
         updateProgressBar();
