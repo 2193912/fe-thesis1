@@ -494,6 +494,12 @@ body.dark-theme {
   color: var(--first-color);
   transition: border .4s, background-color .4s;
 }
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  box-shadow: 0 4px 32px hsla(88, 100%, 3%, 0.908), 0 0 0 4px var(--first-color);
+  transition: box-shadow .4s;
+}
 /* Style for the expanded photo */
 .featured__card.expanded {
   position: fixed;
