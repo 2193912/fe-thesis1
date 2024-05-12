@@ -217,15 +217,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (score == storyData.quiz.length) {
             quizResults.innerHTML += `<p>Congratulations! You got a perfect score!</p>`;
             audioResult = new Audio('assets/audio/perfect.mp3');
-        } else {
-        //     audioResult = new Audio('assets/audio/perfect.mp3');
-        // }else if (score >= storyData.quiz.length/2){
-        //     quizResults.innerHTML += `<p>Nice! You have passed!</p>`;
-        //     audioResult = new Audio('assets/audio/passing.mp3');
-        // }else {
+        } 
+        else if (score >= storyData.quiz.length/2){
+        quizResults.innerHTML += `<p>Nice! You have passed!</p>`;
+        audioResult = new Audio('assets/audio/passing.mp3');
+        }else {
             quizResults.innerHTML += `<p>Keep practicing to improve your score!</p>`;
-        //     audioResult = new Audio('assets/audio/failing.mp3');
-        // }
+            audioResult = new Audio('assets/audio/failing.mp3');
         }
     }
     
